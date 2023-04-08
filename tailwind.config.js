@@ -9,7 +9,21 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'outfit': ['var(--font-outfit)'], 
+      'cormorant': ['var(--font-cormorant)'],
+    },
+    extend: {
+      keyframes: {
+        wave: {
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(10deg)' },
+        }
+      },
+      animation: {
+        wave: 'wave 1s ease-in-out infinite',
+      }
+    },
   },
   plugins: [],
 }
