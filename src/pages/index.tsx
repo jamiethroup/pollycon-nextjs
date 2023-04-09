@@ -6,6 +6,16 @@ import sal from 'sal.js'
 import blackAxeTattoo from '../../public/images/blackaxetattoo.png'
 import louLouImages from '../../public/images/loulouimages.png'
 
+// Clients
+import beis from '../../public/images/clients/beis.webp'
+import costcutter from '../../public/images/clients/costcutter.webp'
+import finnmark from '../../public/images/clients/finnmark.webp'
+import laredoute from '../../public/images/clients/laredoute.webp'
+import lvmh from '../../public/images/clients/lvmh.webp'
+import mec from '../../public/images/clients/mec.webp'
+import npower from '../../public/images/clients/npower.webp'
+import travelopia from '../../public/images/clients/travelopia.webp'
+
 export default function Home() {
   sal();
   return (
@@ -62,7 +72,29 @@ export default function Home() {
   {/* END - Hero */}
   {/* START - Freelance Projects */}
   <section className="container mx-auto max-w-7xl py-20 md:py-40">
-    <div className="px-6 md:px-0 flex flex-col md:grid md:grid-cols-12 md:gap-10">
+    <div className="grid grid-cols-12">
+    <div className="col-span-12">
+      <h5 
+      className='font-outfit uppercase font-light tracking-wide'
+      data-sal="slide-up"
+      data-sal-delay="200"
+      data-sal-duration="500"
+      data-sal-easing="ease-out-back"
+      >
+        How I help
+      </h5>
+      <h3 
+      className='text-gray-800 text-5xl mt-4 max-w-5xl mb-20'
+      data-sal="slide-up"
+      data-sal-delay="700"
+      data-sal-duration="500"
+      data-sal-easing="ease-out-back"
+      >
+        Throughout my career, I&rsquo;ve honed my skills to allow me to create <span className='italic font-cormorant font-medium'>interactive web experiences</span> that are both modern and focused on <span className='italic font-cormorant font-medium'>speed</span>
+      </h3>
+    </div>
+    </div>
+    <div className="px-6 md:px-0 py-20 flex flex-col md:grid md:grid-cols-12 md:gap-10">
       <div
         className="order-last md:order-first col-span-12 md:col-span-5 flex items-start justify-center flex-col"
         data-sal="slide-up"
@@ -89,50 +121,96 @@ export default function Home() {
         </figure>
       </div>
     </div>
-    <div className="col-span-12">
-      <h5 
-      className='font-outfit uppercase font-light tracking-wide'
-      data-sal="slide-up"
-      data-sal-delay="200"
-      data-sal-duration="500"
-      data-sal-easing="ease-out-back"
+    <div className="px-6 py-20 md:px-0 flex flex-col md:grid md:grid-cols-12 md:gap-10">
+      <div
+        className="order-last col-span-12 md:col-span-5 flex items-start justify-center flex-col"
+        data-sal="slide-up"
+        data-sal-delay="200"
+        data-sal-duration="500"
+        data-sal-easing="ease-out-back"
       >
-        How I help
-      </h5>
-      <h3 
-      className='text-gray-800 text-5xl mt-4 max-w-5xl mb-20'
-      data-sal="slide-up"
-      data-sal-delay="700"
-      data-sal-duration="500"
-      data-sal-easing="ease-out-back"
-      >
-        Throughout my career, I've honed my skills to allow me to create <span className='italic font-cormorant font-medium'>interactive web experiences</span> that are both modern and focused on <span className='italic font-cormorant font-medium'>speed</span>
-      </h3>
+        <h4>Black Axe Tattoo Studio</h4>
+        <h3 className='font-outfit text-3xl mt-4 font-normal text-gray-700'>Creating an <span className='italic font-cormorant font-medium'>unique design</span> for a Birmingham based studio</h3>
+      </div>
+      <div className="order-first col-span-12 md:col-span-7">
+        <figure
+          className='p-4 md:p-10 bg-teal-800 mb-6'
+          data-sal="slide-up"
+          data-sal-delay="200"
+          data-sal-duration="500"
+          data-sal-easing="ease-out-back"
+        >
+          <Image
+            className='shadow-md shadow-gray-800 hover:scale-105 duration-300 transform'
+            src={louLouImages}
+            alt="Picture of the author"
+          />
+        </figure>
+      </div>
     </div>
-    <div className="col-span-12 md:col-span-4">
-      
-    </div>
-    <div className="col-span-12 md:col-span-4">
-      <figure className='p-10 bg-indigo-800 mb-6'>
-        <Image
-          className='shadow-md shadow-gray-800 hover:scale-105 duration-300 transform'
-          src={louLouImages}
-          alt="Picture of the author"
-        />
-      </figure>
-      <h4>Lou Lou Images</h4>
-      <h3 className='font-outfit text-3xl mt-4 font-normal text-gray-700'>Creating an <span className='italic font-cormorant font-medium'>unique design</span> for a Birmingham based studio</h3>
-    </div>
-    <div className="col-span-12 md:col-span-4">
-      <figure className='p-10 bg-slate-800 mb-6'>
-        <Image
-          className='shadow-md shadow-gray-800 hover:scale-105 duration-300 transform'
-          src={blackAxeTattoo}
-          alt="Picture of the author"
-        />
-      </figure>
-      <h4>Black Axe Tattoo Studio</h4>
-      <h3 className='font-outfit text-3xl mt-4 font-normal text-gray-700'>Creating an <span className='italic font-cormorant font-medium'>unique design</span> for a Birmingham based studio</h3>
+    <div className='px-6 py-20 md:px-0 flex flex-col md:grid md:grid-cols-12 md:gap-10'>
+      <div className="col-span-12 text-center">
+        <h5 
+        className='font-outfit uppercase font-light tracking-wide'
+        data-sal="slide-up"
+        data-sal-delay="200"
+        data-sal-duration="500"
+        data-sal-easing="ease-out-back"
+        >
+          Other Clients
+        </h5>
+        <h3 
+        className='text-gray-800 text-3xl mt-4 mx-auto mb-20'
+        data-sal="slide-up"
+        data-sal-delay="700"
+        data-sal-duration="500"
+        data-sal-easing="ease-out-back"
+        >
+        That I&rsquo;ve worked with during my career
+        </h3>
+      </div>
+      <div className="col-span-4">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="200"
+            data-sal-easing="ease-out-back"
+          >
+            <Image
+              className='grayscale hover:grayscale-0'
+              src={beis}
+              alt="Picture of the author"
+            />
+          </figure>
+      </div>
+      <div className="col-span-4">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="200"
+            data-sal-easing="ease-out-back"
+          >
+            <Image
+              className='grayscale hover:grayscale-0'
+              src={costcutter}
+              alt="Picture of the author"
+            />
+          </figure>
+      </div>
+      <div className="col-span-4">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="500"
+            data-sal-duration="200"
+            data-sal-easing="ease-out-back"
+          >
+            <Image
+              className='grayscale hover:grayscale-0'
+              src={finnmark}
+              alt="Picture of the author"
+            />
+          </figure>
+      </div>
     </div>
   </section>
   {/* END - Freelance Projects */}
