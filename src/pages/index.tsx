@@ -71,10 +71,10 @@ export default function Home() {
   </section>
   {/* END - Hero */}
   {/* START - Freelance Projects */}
-  <section className="container mx-auto max-w-7xl py-20 md:py-40">
+  <section className="container mx-auto px-6 max-w-7xl py-20 md:py-40">
     <div className="grid grid-cols-12">
     <div className="col-span-12">
-      <h5 
+      <h5  
       className='font-outfit uppercase font-light tracking-wide'
       data-sal="slide-up"
       data-sal-delay="200"
@@ -107,14 +107,14 @@ export default function Home() {
       </div>
       <div className="order-first md:order-last col-span-12 md:col-span-7">
         <figure
-          className='p-4 md:p-10 bg-slate-800 mb-6'
+          className='py-4 md:p-14 bg-slate-800 mb-6'
           data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="500"
           data-sal-easing="ease-out-back"
         >
           <Image
-            className='shadow-md shadow-gray-800 hover:scale-105 duration-300 transform'
+            className='shadow-md shadow-gray-800 hover:scale-105 duration-300 rounded-xl transform'
             src={blackAxeTattoo}
             alt="Picture of the author"
           />
@@ -129,19 +129,19 @@ export default function Home() {
         data-sal-duration="500"
         data-sal-easing="ease-out-back"
       >
-        <h4>Black Axe Tattoo Studio</h4>
+        <h4>Lou Lou Images</h4>
         <h3 className='font-outfit text-3xl mt-4 font-normal text-gray-700'>Creating an <span className='italic font-cormorant font-medium'>unique design</span> for a Birmingham based studio</h3>
       </div>
       <div className="order-first col-span-12 md:col-span-7">
         <figure
-          className='p-4 md:p-10 bg-teal-800 mb-6'
+          className='py-4 md:p-14 bg-teal-800 mb-6'
           data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="500"
           data-sal-easing="ease-out-back"
         >
           <Image
-            className='shadow-md shadow-gray-800 hover:scale-105 duration-300 transform'
+            className='shadow-md shadow-gray-800 hover:scale-105 duration-300 rounded-xl transform'
             src={louLouImages}
             alt="Picture of the author"
           />
@@ -169,7 +169,7 @@ export default function Home() {
         That I&rsquo;ve worked with during my career
         </h3>
       </div>
-      <div className="col-span-4">
+      <div className="col-span-6 md:col-span-3">
           <figure
             data-sal="slide-up"
             data-sal-delay="100"
@@ -177,13 +177,13 @@ export default function Home() {
             data-sal-easing="ease-out-back"
           >
             <Image
-              className='grayscale hover:grayscale-0'
+              className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
               src={beis}
               alt="Picture of the author"
             />
           </figure>
       </div>
-      <div className="col-span-4">
+      <div className="col-span-6 md:col-span-3">
           <figure
             data-sal="slide-up"
             data-sal-delay="300"
@@ -191,13 +191,13 @@ export default function Home() {
             data-sal-easing="ease-out-back"
           >
             <Image
-              className='grayscale hover:grayscale-0'
+              className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
               src={costcutter}
               alt="Picture of the author"
             />
           </figure>
       </div>
-      <div className="col-span-4">
+      <div className="col-span-6 md:col-span-3">
           <figure
             data-sal="slide-up"
             data-sal-delay="500"
@@ -205,8 +205,78 @@ export default function Home() {
             data-sal-easing="ease-out-back"
           >
             <Image
-              className='grayscale hover:grayscale-0'
+              className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
               src={finnmark}
+              alt="Picture of the author"
+            />
+          </figure>
+      </div>
+      <div className="col-span-6 md:col-span-3">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="200"
+            data-sal-easing="ease-out-back"
+          >
+            <Image
+              className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
+              src={laredoute}
+              alt="Picture of the author"
+            />
+          </figure>
+      </div>
+      <div className="col-span-6 md:col-span-3">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="200"
+            data-sal-easing="ease-out-back"
+          >
+            <Image
+              className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
+              src={lvmh}
+              alt="Picture of the author"
+            />
+          </figure>
+      </div>
+      <div className="col-span-6 md:col-span-3">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="500"
+            data-sal-duration="200"
+            data-sal-easing="ease-out-back"
+          >
+            <Image
+              className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
+              src={mec}
+              alt="Picture of the author"
+            />
+          </figure>
+      </div>
+      <div className="col-span-6 md:col-span-3">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="200"
+            data-sal-easing="ease-out-back"
+          >
+            <Image
+              className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
+              src={npower}
+              alt="Picture of the author"
+            />
+          </figure>
+      </div>
+      <div className="col-span-6 md:col-span-3">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="200"
+            data-sal-easing="ease-out-back"
+          >
+            <Image
+              className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
+              src={travelopia}
               alt="Picture of the author"
             />
           </figure>
