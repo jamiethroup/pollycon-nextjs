@@ -45,8 +45,8 @@ import npower from '../../public/images/clients/npower.webp'
 import travelopia from '../../public/images/clients/travelopia.webp'
 
 export default function Home() {
-    const [firstSwiper, setFirstSwiper] = useState(null);
-  const [secondSwiper, setSecondSwiper] = useState(null);
+    const [firstSwiper, setFirstSwiper] = useState<any>(null);;
+  const [secondSwiper, setSecondSwiper] = useState<any>(null);;
   sal();
   return (
   <>

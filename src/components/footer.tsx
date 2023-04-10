@@ -17,8 +17,8 @@ export default function Footer() {
               data-sal-easing="ease-out-back"
             >
               <div className="border border-gray-300 py-16 px-20">
-                <h3 className='text-white text-2xl mb-4'>What I'm working on at the moment?</h3>
-                <p className='mb-4 text-sm text-gray-900'>I'm currently working full time at <a href='https://bravetheskies.com/' className='underline'>Brave The Skies</a> but I'm always playing with something new and I keep it pretty public on  Github.</p>
+                <h3 className='text-white text-2xl mb-4'>What I&rsquo;m working on at the moment?</h3>
+                <p className='mb-4 text-sm text-gray-900'>I&rsquo;m currently working full time at <a href='https://bravetheskies.com/' className='underline'>Brave The Skies</a> but I&rsquo;m always playing with something new and I keep it pretty public on  Github.</p>
                 <a className='inline-flex font-bold text-sm text-white' href="#">Github Linkage</a>
               </div>
             </div>
@@ -34,8 +34,8 @@ export default function Footer() {
             >
               <div className="border border-gray-300 py-16 px-20">
                 <h3 className='text-white text-2xl mb-4'>Want to work together?</h3>
-                <p className='mb-4'>I'm always up to work on community or paid for project's!</p>
-                <a className='inline-flex font-bold text-sm text-white' href="mailto:hello@pollycon.co.uk">Let's chat</a>
+                <p className='mb-4'>I&rsquo;m always up to work on community or paid for project&rsquo;s!</p>
+                <a className='inline-flex font-bold text-sm text-white' href="mailto:hello@pollycon.co.uk">Let&rsquo;s chat</a>
               </div>
             </div>
           </div>
