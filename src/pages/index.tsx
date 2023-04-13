@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import Image from 'next/image'
 import sal from 'sal.js'
 
+// Components
+import Hero from '@/components/hero'
+
 // Import Swiper React components
 import {EffectCards, Navigation, Controller, EffectFade} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -11,6 +14,20 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
+
+// Images
+import blackAxeTattoo from '../../public/images/blackaxetattoo.png'
+import louLouImages from '../../public/images/loulouimages.png'
+
+// Clients
+import beis from '../../public/images/clients/beis.webp'
+import costcutter from '../../public/images/clients/costcutter.webp'
+import finnmark from '../../public/images/clients/finnmark.webp'
+import laredoute from '../../public/images/clients/laredoute.webp'
+import lvmh from '../../public/images/clients/lvmh.webp'
+import mec from '../../public/images/clients/mec.webp'
+import npower from '../../public/images/clients/npower.webp'
+import travelopia from '../../public/images/clients/travelopia.webp'
 
 const aboutSlides = [
   {
@@ -30,19 +47,20 @@ const aboutSlides = [
   },
 ];
 
-// Images
-import blackAxeTattoo from '../../public/images/blackaxetattoo.png'
-import louLouImages from '../../public/images/loulouimages.png'
-
-// Clients
-import beis from '../../public/images/clients/beis.webp'
-import costcutter from '../../public/images/clients/costcutter.webp'
-import finnmark from '../../public/images/clients/finnmark.webp'
-import laredoute from '../../public/images/clients/laredoute.webp'
-import lvmh from '../../public/images/clients/lvmh.webp'
-import mec from '../../public/images/clients/mec.webp'
-import npower from '../../public/images/clients/npower.webp'
-import travelopia from '../../public/images/clients/travelopia.webp'
+const projects = [
+  {
+    subtitle: 'Black Axe Tattoo Studio',
+    class: 'py-4 md:p-14 bg-slate-800 mb-6',
+    title: 'Creating an <span class="italic font-cormorant font-medium">unique design</span> for a Birmingham based studio',
+    image: blackAxeTattoo,
+  },
+  {
+    subtitle: 'Lou Lou Images',
+    class: 'py-4 md:p-14 bg-teal-800 mb-6',
+    title: 'Creating an <span class="italic font-cormorant font-medium">unique design</span> for a Birmingham based studio',
+    image: louLouImages,
+  },
+];
 
 export default function Home() {
     const [firstSwiper, setFirstSwiper] = useState<any>(null);;
@@ -51,56 +69,10 @@ export default function Home() {
   return (
   <>
   {/* START - Hero */}
-  <section className="waveWrapper waveAnimation">
-    <div className="w-full h-full flex items-center justify-center relative z-30">
-      <div className="container px-6 mt-32 mb-40 md:mt-0 md:mb-0 max-w-7xl mx-auto">
-      <h2 
-      className='mb-8'
-      data-sal="slide-up"
-      data-sal-delay="200"
-      data-sal-duration="500"
-      data-sal-easing="ease-out-back"
-      >
-        Hi, I&rsquo;m Jamie<span className='animate-wave'>👋</span>
-      </h2>
-      <h3
-      data-sal="slide-up"
-      data-sal-delay="700"
-      data-sal-duration="750"
-      data-sal-easing="ease-out-back"
-      >
-        I’m a <span className="italic font-cormorant font-medium">shopify developer</span> who loves to create <span className="italic font-cormorant font-medium">pixel perfect websites</span> utilizing on the edge tools.
-      </h3>
-      <div
-        data-sal="slide-up"
-        data-sal-delay="1000"
-        data-sal-duration="750"
-        data-sal-easing="ease-out-back"
-      >
-      <a 
-        href="/case-studies" 
-        className="button mt-10"
-      >
-        View case studies
-        <svg className='h-6 ml-2' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512">
-          <path className='fill-white' d="m322.7 128.4 100.3 105c6 5.8 9 13.7 9 22.4s-3 16.5-9 22.4L322.7 383.6c-11.9 12.5-31.3 12.5-43.2 0-11.9-12.5-11.9-32.7 0-45.2l48.2-50.4h-217c-17 0-30.7-14.3-30.7-32s13.7-32 30.6-32h217l-48.2-50.4c-11.9-12.5-11.9-32.7 0-45.2 12-12.5 31.3-12.5 43.3 0z"/>
-        </svg>
-        </a>
-      </div>
-      </div>
-    </div>
-    <div className="waveWrapperInner bgTop">
-      <div className="wave waveTop"></div>
-    </div>
-    <div className="waveWrapperInner bgMiddle">
-      <div className="wave waveMiddle"></div>
-    </div>
-    <div className="waveWrapperInner bgBottom">
-      <div className="wave waveBottom"></div>
-    </div>
-  </section>
+  <Hero/>
   {/* END - Hero */}
   {/* START - Freelance Projects */}
+  
   <section className="container mx-auto px-6 max-w-7xl py-20 md:py-40">
     <div className="grid grid-cols-12">
     <div className="col-span-12">
@@ -124,60 +96,40 @@ export default function Home() {
       </h3>
     </div>
     </div>
-    <div className="px-6 md:px-0 py-10 md:py-20 flex flex-col md:grid md:grid-cols-12 md:gap-10">
-      <div
-        className="order-last md:order-first col-span-12 md:col-span-5 flex items-start justify-center flex-col"
-        data-sal="slide-up"
-        data-sal-delay="200"
-        data-sal-duration="500"
-        data-sal-easing="ease-out-back"
-      >
-        <h4>Black Axe Tattoo Studio</h4>
-        <h3 className='font-outfit text-3xl mt-4 font-normal text-gray-700'>Creating an <span className='italic font-cormorant font-medium'>unique design</span> for a Birmingham based studio</h3>
-      </div>
-      <div className="order-first md:order-last col-span-12 md:col-span-7">
-        <figure
-          className='py-4 md:p-14 bg-slate-800 mb-6'
-          data-sal="slide-up"
-          data-sal-delay="200"
-          data-sal-duration="500"
-          data-sal-easing="ease-out-back"
-        >
-          <Image
-            className='shadow-md shadow-gray-800 hover:scale-105 duration-300 rounded-xl transform'
-            src={blackAxeTattoo}
-            alt="Picture of the author"
-          />
-        </figure>
-      </div>
-    </div>
-    <div className="px-6 py-20 md:px-0 flex flex-col md:grid md:grid-cols-12 md:gap-10">
-      <div
-        className="order-last col-span-12 md:col-span-5 flex items-start justify-center flex-col"
-        data-sal="slide-up"
-        data-sal-delay="200"
-        data-sal-duration="500"
-        data-sal-easing="ease-out-back"
-      >
-        <h4>Lou Lou Images</h4>
-        <h3 className='font-outfit text-3xl mt-4 font-normal text-gray-700'>Creating an <span className='italic font-cormorant font-medium'>unique design</span> for a Birmingham based studio</h3>
-      </div>
-      <div className="order-first col-span-12 md:col-span-7">
-        <figure
-          className='py-4 md:p-14 bg-teal-800 mb-6'
-          data-sal="slide-up"
-          data-sal-delay="200"
-          data-sal-duration="500"
-          data-sal-easing="ease-out-back"
-        >
-          <Image
-            className='shadow-md shadow-gray-800 hover:scale-105 duration-300 rounded-xl transform'
-            src={louLouImages}
-            alt="Picture of the author"
-          />
-        </figure>
-      </div>
-    </div>
+      {projects.map((project,i) => (
+        <div className="project-block px-6 md:px-0 py-10 md:py-20 flex flex-col md:grid md:grid-cols-12 md:gap-10" key={i}>
+          <div
+            className="order-last md:order-first col-span-12 md:col-span-5 flex items-start justify-center flex-col"
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-duration="500"
+            data-sal-easing="ease-out-back"
+          >
+            <h4
+              dangerouslySetInnerHTML={{__html: project.subtitle}}
+            ></h4>
+            <h3 
+              className='font-outfit text-3xl mt-4 font-normal text-gray-700'
+              dangerouslySetInnerHTML={{__html: project.title}}>
+            </h3>
+          </div>
+          <div className="order-first md:order-last col-span-12 md:col-span-7">
+            <figure
+              className={project.class}
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-duration="500"
+              data-sal-easing="ease-out-back"
+            >
+              <Image
+                className='shadow-md shadow-gray-800 hover:scale-105 duration-300 rounded-xl transform'
+                src={project.image}
+                alt="Picture of the author"
+              />
+            </figure>
+          </div>
+        </div>
+      ))}
     <div className='px-6 py-20 md:px-0 grid md:grid-cols-12 md:gap-10'>
       <div className="col-span-12 text-center">
         <h5 

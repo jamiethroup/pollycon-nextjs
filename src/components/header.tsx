@@ -1,6 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
 const links = [
   {
     label: "About",
@@ -15,6 +12,11 @@ const links = [
     path: "/work",
   },
 ]
+
+const strings = {
+  contact_label: 'Contact'
+}
+
 export default function Header() {
   return (
     <header className='absolute z-40 top-0 left-0 w-full'>
@@ -41,8 +43,8 @@ export default function Header() {
               </li>
             ))}
             <li>
-              <a className='contact-link border border-white text-white flex items-center gap-1 rounded-full py-1.5 px-3 -ml-3 font-outfit text-sm duration-150 ease-in-out hover:bg-black hover:text-white font-medium' href='/contact'>
-                <span>Contact</span>
+              <a className='contact-link border border-white text-white flex items-center gap-1 rounded-full py-1.5 px-3 -ml-3 font-outfit text-sm duration-150 ease-in-out hover:bg-black hover:text-white font-medium' href='mailto:hello@pollycon.co.uk?subject=Contact from Pollycon Website'>
+                <span>{strings.contact_label}</span>
                 <svg className='w-4' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                   <path className='fill-white' d="M19.47 31a2 2 0 0 1-1.8-1.09l-4-7.57a1 1 0 0 1 1.77-.93l4 7.57L29 3.06 3 12.49l9.8 5.26 8.32-8.32a1 1 0 0 1 1.42 1.42l-8.85 8.84a1 1 0 0 1-1.17.18L2.09 14.33a2 2 0 0 1 .25-3.72l25.91-9.48a2 2 0 0 1 2.62 2.62l-9.48 25.91A2 2 0 0 1 19.61 31Z" data-name="Layer 45"/>
                 </svg>
