@@ -10,7 +10,7 @@ export default function Header() {
       data-sal-duration="500"
       data-sal-easing="ease-out-back"
       >
-        Hi, I&rsquo;m Jamie<span className='animate-wave'>👋</span>
+        Hola, I&rsquo;m Jamie<span className='animate-wave'>👋</span>
       </h2>
       <h3
       data-sal="slide-up"
