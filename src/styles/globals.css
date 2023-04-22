@@ -303,3 +303,43 @@ html.dark .aboutContentSwiper .swiper-button-next:after {
   right: 0;
   left: 70px;
 }
+
+
+.project-block:nth-of-type(odd) div:nth-of-type(odd) {
+  @apply order-last md:order-first;
+}
+
+.project-block:nth-of-type(odd) div:nth-of-type(even) {
+  @apply order-first md:order-last;
+}
+
+
+.project-block:nth-of-type(even) div:nth-of-type(odd) {
+  @apply order-first md:order-last;
+}
+
+.project-block:nth-of-type(even) div:nth-of-type(even) {
+  @apply order-last md:order-first;
+}
+
+input[type="text"], textarea {
+  @apply bg-white border mb-5 border-gray-400 focus:border-red-500 active:border-red-500 focus:rounded-2xl duration-200 hover:border-red-500 rounded-sm resize-none p-2;
+}
+
+label {
+  @apply absolute -top-2 left-2 text-xs font-outfit px-1 bg-white py-0.5;
+}
+
+button[type="submit"] {
+  @apply bg-green-400 text-white rounded-full text-xs font-outfit uppercase tracking-wide py-2 px-4 hover:bg-green-500 duration-200;
+}
+
+.modal {
+  @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center flex-row;
+}
+
+form {
+  @apply bg-white p-10 rounded-md shadow-slate-400 shadow-md;
+}
+
+/* H1 in form is for returned title and div is for the returned success message */
