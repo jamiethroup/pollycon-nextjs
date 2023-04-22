@@ -1,6 +1,6 @@
+import React, { useState, useRef } from "react";
 import Link from 'next/link'
 import MobileMenu from '@/components/mobile-menu'
-import Footer from '@/components/footer'
 
 const links = [
   {
@@ -22,6 +22,10 @@ const strings = {
 }
 
 export default function Header() {
+  const ChildRef =  useRef();
+  const updateState = () => {
+    console.log('Works');    
+  }
   return (
     <>
     <header className='absolute z-40 top-0 left-0 w-full'>
@@ -36,7 +40,7 @@ export default function Header() {
         </div>
         <div className="col-span-6 flex items-center justify-end md:hidden">
           <label htmlFor="check">
-            <input type="checkbox" id="check"/> 
+            <input onClick={() =>  updateState()} type="checkbox" id="check"/> 
             <span></span>
             <span></span>
             <span></span>
@@ -63,7 +67,7 @@ export default function Header() {
         </div>
       </div>
     </header>
-    <MobileMenu />
+    <MobileMenu ref={ChildRef} callparentfunction={() => setIsNavExpanded} />
     </>
   )
 }

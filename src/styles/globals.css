@@ -339,11 +339,25 @@ button[type="submit"] {
 }
 
 .modal {
-  @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center flex-row;
+  @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-40 flex items-center justify-center flex-row hidden;
 }
 
 form {
   @apply bg-white p-10 rounded-md shadow-slate-400 shadow-md;
+}
+
+.mobile-menu {
+  @apply fixed top-0 left-0 w-screen h-screen z-40;
+}
+
+.mobile-menu:after {
+  content: '';
+  @apply block fixed top-0 left-0 w-full z-10 h-full bg-black bg-opacity-80;
+}
+
+.mobile-menu > div {
+  @apply bg-white absolute top-0 right-0 z-50 h-screen p-4;
+  width: 90vw;
 }
 
 /* H1 in form is for returned title and div is for the returned success message */

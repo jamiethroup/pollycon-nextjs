@@ -1,34 +1,32 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, forwardRef, useImperativeHandle } from "react";
 
-export default function MobileMenu() {
-  const [openDrawer, toggleDrawer] = useState(false);
-  const drawerRef = useRef(null);
-  useEffect(() => {
-    /* Close the drawer when the user clicks outside of it */
-    const closeDrawer = (event: { target: any; }) => {
-      if (drawerRef.current && drawerRef.current.contains(event.target)) {
-        return;
-      }
+// eslint-disable-next-line react/display-name
+const MobileMenu = forwardRef((_props, ref) => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-      toggleDrawer(false);
-    };
-
-    document.addEventListener("mousedown", closeDrawer);
-    return () => document.removeEventListener("mousedown", closeDrawer);
-  }, []);
-
+  useImperativeHandle(ref, () => ({
+    callChildFunction(){
+      setIsNavExpanded(!isNavExpanded);
+    }
+  }));
   return (
     <>
-    <div className="relative z-50" onClick={() => toggleDrawer(true)}>
-          MENU
-        </div>
-
-        <ul ref={drawerRef} className={drawerRef} openDrawer={openDrawer}>
+        <aside
+        className={
+          isNavExpanded ? "mobile-menu expanded" : "mobile-menu"
+        } 
+        >
+          <div className="">
+          <ul>
           <li>List Item</li>
           <li>List Item</li>
           <li>List Item</li>
           <li>List Item</li>
-        </ul>
+          </ul>
+          </div>
+        </aside>
     </>
   );
-}
+});
+
+export default MobileMenu

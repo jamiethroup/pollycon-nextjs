@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Image from 'next/image'
 import sal from 'sal.js'
 
 // Components
@@ -15,11 +14,11 @@ export default function Home() {
   sal();
   return (
   <>
-  <Hero/>
-  <Projects/>
-  <Clients/>
-  <About />
-  <EmailForm />
+    <Hero/>
+    <Projects/>
+    <Clients/>
+    <About />
+    <EmailForm />
   </>
   )
 }
