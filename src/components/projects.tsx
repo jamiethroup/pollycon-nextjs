@@ -8,24 +8,24 @@ const projects = [
   {
     subtitle: 'Black Axe Tattoo Studio',
     class: 'py-4 md:p-14 bg-slate-800 mb-6',
-    title: 'Creating an <span class="italic font-cormorant font-medium">unique design</span> for a Birmingham based studio',
+    title: 'Creating an <span class="font-ebgaramond font-light text-2xl md:text-6xl italic">unique design</span> for a Birmingham based studio',
     image: blackAxeTattoo,
   },
   {
     subtitle: 'Lou Lou Images',
     class: 'py-4 md:p-14 bg-teal-800 mb-6',
-    title: 'Creating an <span class="italic font-cormorant font-medium">unique design</span> for a Birmingham based studio',
+    title: 'Creating an <span class="font-ebgaramond font-light text-2xl md:text-6xl italic">unique design</span> for a Birmingham based studio',
     image: louLouImages,
   },
 ];
 
 export default function Projects() {
   return (
-    <section className="container mx-auto px-6 max-w-7xl py-20 md:py-40">
+    <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:py-40">
       <div className="grid grid-cols-12">
         <div className="col-span-12">
           <h5  
-          className='font-outfit uppercase font-light tracking-wide'
+          className='font-outfit uppercase font-medium  tracking-wide'
           data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="500"
@@ -40,7 +40,7 @@ export default function Projects() {
           data-sal-duration="500"
           data-sal-easing="ease-out-back"
           >
-            Throughout my career, I&rsquo;ve honed my skills to allow me to create <span className='italic font-cormorant font-medium'>interactive web experiences</span> that are both modern and focused on <span className='italic font-cormorant font-medium'>speed</span>
+            Throughout my career, I&rsquo;ve honed my skills to allow me to create <span className='font-ebgaramond font-light text-2xl md:text-6xl italic'>interactive web experiences</span> that are both modern and focused on <span className='font-ebgaramond font-light text-2xl md:text-6xl italic'>speed</span>
           </h3>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function Header() {
       data-sal-duration="750"
       data-sal-easing="ease-out-back"
       >
-        I’m a <span className="italic font-cormorant font-medium">shopify developer</span> who loves to create <span className="italic font-cormorant font-medium">pixel perfect websites</span> utilizing on the edge tools.
+        I’m a <span className="font-ebgaramond font-light text-2xl md:text-6xl italic">shopify developer</span> who loves to create <span className="font-ebgaramond font-light text-2xl md:text-6xl italic">pixel perfect web applications</span> utilizing on the edge tools.
       </h3>
       <div
         data-sal="slide-up"

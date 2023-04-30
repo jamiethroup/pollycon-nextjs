@@ -1,34 +1,19 @@
 import React, { useState, useRef } from "react";
 import Link from 'next/link'
 import MobileMenu from '@/components/mobile-menu'
-
-const links = [
-  {
-    label: "About",
-    path: "/about",
-  },
-  {
-    label: "Words",
-    path: "/words",
-  },
-  {
-    label: "Work",
-    path: "/work",
-  },
-]
-
 const strings = {
   contact_label: 'Contact'
 }
 
-export default function Header() {
+export default function Header({linklist}) {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   const ChildRef =  useRef();
   const updateState = () => {
-    console.log('Works');    
+    setIsNavExpanded(true)
   }
   return (
     <>
-    <header className='absolute z-40 top-0 left-0 w-full'>
+    <header className='absolute z-50 top-0 left-0 w-full'>
       <div className='container max-w-7xl mx-auto grid grid-cols-12 py-6 px-6'>
         <div className="col-span-6 md:col-span-2">
           <Link href='/'>
@@ -40,7 +25,7 @@ export default function Header() {
         </div>
         <div className="col-span-6 flex items-center justify-end md:hidden">
           <label htmlFor="check">
-            <input onClick={() =>  updateState()} type="checkbox" id="check"/> 
+            <input onClick={() =>  ChildRef.current.callChildFunction()} type="checkbox" id="check"/> 
             <span></span>
             <span></span>
             <span></span>
@@ -49,7 +34,7 @@ export default function Header() {
         <div className="hidden md:col-span-10 md:flex items-center justify-end">
           <nav>
             <ul className='flex items-center flex-1 gap-8'>
-            {links.map((link, i) => (
+            {linklist.map((link, i) => (
               <li key={link.path}>
                 <Link className='font-outfit text-white block text-sm hover:-translate-y-0.5 duration-150 font-medium' href={link.path}>{link.label}</Link>
               </li>
@@ -67,7 +52,7 @@ export default function Header() {
         </div>
       </div>
     </header>
-    <MobileMenu ref={ChildRef} callparentfunction={() => setIsNavExpanded} />
+    <MobileMenu  ref={ChildRef} callparentfunction={() => setIsNavExpanded} />
     </>
   )
 }

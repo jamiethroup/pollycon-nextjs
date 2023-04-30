@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'outfit': ['var(--font-outfit)'], 
-      'cormorant': ['var(--font-cormorant)'],
+      'ebgaramond': ['var(--font-ebgaramond)'],
     },
     extend: {
       keyframes: {

@@ -32,7 +32,7 @@ export default function About() {
   const [firstSwiper, setFirstSwiper] = useState<any>(null);
   const [secondSwiper, setSecondSwiper] = useState<any>(null);
   return (
-    <section className="container mx-auto px-6 max-w-7xl py-20 md:py-40">
+    <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:py-40">
       <div className="grid grid-cols-12 pt-40">
           {/* START - Information Slider - Paragraph */}
           <div className="col-span-8 md:col-span-6">

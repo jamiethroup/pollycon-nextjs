@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function Footer() {
+export default function Footer({linklist}) {
   return (
     <>
     <footer>
@@ -16,10 +17,12 @@ export default function Footer() {
               data-sal-delay="500"
               data-sal-easing="ease-out-back"
             >
-              <div className="border border-gray-300 py-16 px-20">
+              <div className="border border-gray-300 py-16 px-16 md:px-20">
                 <h3 className='text-white text-2xl mb-4'>What I&rsquo;m working on at the moment?</h3>
                 <p className='mb-4 text-sm text-gray-900'>I&rsquo;m currently working full time at <a href='https://bravetheskies.com/' className='underline'>Brave The Skies</a> but I&rsquo;m always playing with something new and I keep it pretty public on  Github.</p>
-                <a className='inline-flex font-bold text-sm text-white' href="#">Github Linkage</a>
+                <Link target="_blank" rel="noopener noreferrer" href="https://github.com/jamiethroup" className='inline-flex font-bold text-sm text-white'>
+                  Github Linkage
+                </Link>
               </div>
             </div>
           </div>
@@ -32,10 +35,12 @@ export default function Footer() {
               data-sal-delay="500"
               data-sal-easing="ease-out-back"
             >
-              <div className="border border-gray-300 py-16 px-20">
+              <div className="border border-gray-300 py-16 px-16 md:px-20">
                 <h3 className='text-white text-2xl mb-4'>Want to work together?</h3>
                 <p className='mb-4'>I&rsquo;m always up to work on community or paid for project&rsquo;s!</p>
-                <a className='inline-flex font-bold text-sm text-white' href="mailto:hello@pollycon.co.uk">Let&rsquo;s chat</a>
+                <Link href="mailto:hello@pollycon.co.uk" className='inline-flex font-bold text-sm text-white'>
+                  Let&rsquo;s Chat
+                </Link>
               </div>
             </div>
           </div>
@@ -53,10 +58,11 @@ export default function Footer() {
 
           <div className="col-span-12 md:col-span-6">
             <ul className='grid grid-cols-2 mt-6 md:mt-16 pt-3 max-w-sm ml-auto'>
-              <li><a className='font-outfit text-sm text-white mb-8 font-medium inline-block' href="#">Home</a></li>
-              <li><a className='font-outfit text-sm text-white mb-8 font-medium inline-block' href="#">About</a></li>
-              <li><a className='font-outfit text-sm text-white mb-8 font-medium inline-block' href="#">Words</a></li>
-              <li><a className='font-outfit text-sm text-white mb-8 font-medium inline-block' href="#">Contact</a></li>
+            {linklist.map((link, i) => (
+              <li key={link.path}>
+                <Link className='font-outfit text-sm text-white mb-8 font-medium inline-block' href={link.path}>{link.label}</Link>
+              </li>
+            ))}
             </ul>
           </div>
           </div>

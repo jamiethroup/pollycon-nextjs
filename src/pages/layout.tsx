@@ -3,16 +3,37 @@
 import { ReactNode, useEffect } from "react";
 import Header from '@/components/header'
 import Footer from '@/components/footer'
-import { Outfit, Cormorant } from 'next/font/google';
+import { EB_Garamond, Outfit } from 'next/font/google';
+
+
+// Linklist
+const links = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "About",
+    path: "/about",
+  },
+  {
+    label: "Words",
+    path: "/words",
+  },
+  {
+    label: "Work",
+    path: "/work",
+  },
+]
 
 const outfit = Outfit({
   subsets: ['latin'],
   variable: '--font-outfit',
 })
 
-const cormorant = Cormorant({
+const cormorant = EB_Garamond({
   subsets: ['latin'],
-  variable: '--font-cormorant',
+  variable: '--font-ebgaramond',
 });
 
 // Create a type for the children prop
@@ -35,9 +56,9 @@ const Layout = ({children}: Props) => {
   return (
     <>
     <div className={`${outfit.variable} ${cormorant.variable}`}>
-      <Header/>
+      <Header linklist={links}/>
             <main>{children}</main>
-      <Footer/>
+      <Footer linklist={links}/>
     </div>
     </>
   );
