@@ -12,7 +12,7 @@ import travelopia from '../../public/images/clients/travelopia.webp'
 
 export default function Clients() {
   return (
-    <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:py-40">
+    <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pb-20">
       <div className='px-6 py-20 md:px-0 grid md:grid-cols-12 md:gap-10'>
         <div className="col-span-12 text-center">
           <h5 

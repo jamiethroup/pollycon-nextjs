@@ -5,7 +5,28 @@ const strings = {
   contact_label: 'Contact'
 }
 
-export default function Header({linklist}) {
+
+// Linklist
+const links = [
+  {
+    "label": "Home",
+    "path": "/",
+  },
+  {
+    "label": "About",
+    "path": "/about",
+  },
+  {
+    "label": "Words",
+    "path": "/words",
+  },
+  {
+    "label": "Work",
+    "path": "/work",
+  },
+]
+
+export default function Header() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const ChildRef =  useRef();
   const updateState = () => {
@@ -34,7 +55,7 @@ export default function Header({linklist}) {
         <div className="hidden md:col-span-10 md:flex items-center justify-end">
           <nav>
             <ul className='flex items-center flex-1 gap-8'>
-            {linklist.map((link, i) => (
+            {links.map((link, i) => (
               <li key={link.path}>
                 <Link className='font-outfit text-white block text-sm hover:-translate-y-0.5 duration-150 font-medium' href={link.path}>{link.label}</Link>
               </li>

@@ -4,7 +4,7 @@ export default function Header() {
     <div className="w-full h-full flex items-center justify-center relative z-30">
       <div className="container px-6 mt-32 mb-40 md:mt-0 md:mb-0 max-w-7xl mx-auto">
       <h2 
-      className='mb-8'
+      className='mb-4'
       data-sal="slide-up"
       data-sal-delay="200"
       data-sal-duration="500"
@@ -18,7 +18,7 @@ export default function Header() {
       data-sal-duration="750"
       data-sal-easing="ease-out-back"
       >
-        I’m a <span className="font-ebgaramond font-light text-2xl md:text-6xl italic">shopify developer</span> who loves to create <span className="font-ebgaramond font-light text-2xl md:text-6xl italic">pixel perfect web applications</span> utilizing on the edge tools.
+        I’m a Senior Web Developer and Shopify Plus Expert based in Yorkshire, United Kingdom.
       </h3>
       <div
         data-sal="slide-up"

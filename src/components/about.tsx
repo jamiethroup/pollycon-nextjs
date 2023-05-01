@@ -32,7 +32,7 @@ export default function About() {
   const [firstSwiper, setFirstSwiper] = useState<any>(null);
   const [secondSwiper, setSecondSwiper] = useState<any>(null);
   return (
-    <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:py-40">
+    <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:py-10">
       <div className="grid grid-cols-12 pt-40">
           {/* START - Information Slider - Paragraph */}
           <div className="col-span-8 md:col-span-6">
@@ -47,7 +47,7 @@ export default function About() {
             >
               {aboutSlides.map((slide, i) => (
                 <SwiperSlide className='pr-10 md:pr-0' key={i}>
-                  <h4 className='mt-10 text-sm uppercase'>{slide.subtitle}</h4>
+                  <h4 className='mt-10 text-2xl'>{slide.subtitle}</h4>
                   <h2 className="mt-4 max-w-lg leading-normal text-gray-800" data-sal="slide-up" data-sal-delay="350">{slide.title}</h2>
                   <p className="mt-4 max-w-lg mb-20 md:mb-0 font-light text-base text-gray-800" data-sal="slide-up" data-sal-delay="650">{slide.description}</p>
                 </SwiperSlide>
