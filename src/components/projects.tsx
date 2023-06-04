@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import sal from 'sal.js'
 // Images
 import blackAxeTattoo from '../../public/images/blackaxetattoo.png'
 import louLouImages from '../../public/images/loulouimages.png'
@@ -8,14 +8,14 @@ const projects = [
   {
     subtitle: 'Black Axe Tattoo',
     class: 'py-4 md:p-14 bg-slate-800 mb-6',
-    title: 'I was approached by Victoria to create a website that would showcase her work and allow her to take bookings online.',
+    title: 'I was approached by Victoria to create a website that would showcase her work and allow her to take bookings online. The website needed to be easy to use and allow her to update the content herself. I created a custom WordPress theme that allowed her to do just that. The website is built using the latest web technologies and is fully responsive.',
     image: blackAxeTattoo,
     tags: "Design,Development"
   },
   {
     subtitle: 'Lou Lou Images',
     class: 'py-4 md:p-14 bg-teal-800 mb-6',
-    title: 'Creating an unique design for a Birmingham based studio',
+    title: 'I was approach by Chloe to produce to this website to showcase her photography work. The website needed to be easy to use and allow her to update the content herself. ',
     image: louLouImages,
     tags: "Design,Development"
   },

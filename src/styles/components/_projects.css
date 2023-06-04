@@ -1,0 +1,19 @@
+
+.project-block .image,
+.project-block .text {
+  @apply flex items-start justify-center flex-col;
+}
+
+.project-block:nth-of-type(odd) .image {
+  @apply col-span-12 md:col-start-7 md:col-end-13 order-1 md:order-2;
+}
+.project-block:nth-of-type(odd) .text {
+  @apply col-span-12 md:col-start-2 md:col-end-6 order-2 md:order-1;
+}
+
+.project-block:nth-of-type(even) .image {
+  @apply col-span-12 md:col-span-6;
+}
+.project-block:nth-of-type(even) .text {
+  @apply col-span-12 md:col-start-8 md:col-end-13;
+}

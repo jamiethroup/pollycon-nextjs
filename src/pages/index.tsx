@@ -1,5 +1,4 @@
 import React from 'react';
-import sal from 'sal.js'
 
 // Components
 import Hero from '@/components/hero'
@@ -10,14 +9,12 @@ import About from '@/components/about'
 
 
 export default function Home() {
-  sal();
   return (
   <>
     <Hero/>
     <Projects/>
     <Clients/>
     <About />
-    {/* <EmailForm /> */}
   </>
   )
 }
