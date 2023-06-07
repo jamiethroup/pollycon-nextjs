@@ -29,7 +29,7 @@ const links = [
 
 export default function Header() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const ChildRef =  useRef();
+  const ChildRef =  useRef() || { current: null};
   const updateState = () => {
     setIsNavExpanded(true)
   }
@@ -47,7 +47,7 @@ export default function Header() {
         </div>
         <div className="col-span-6 flex items-center justify-end md:hidden">
           <label htmlFor="check">
-            <input onClick={() =>  ChildRef.current.callChildFunction()} type="checkbox" id="check"/> 
+            <input type="checkbox" id="check"/> 
             <span></span>
             <span></span>
             <span></span>
@@ -75,7 +75,7 @@ export default function Header() {
         </div>
       </div>
     </header>
-    <MobileMenu  ref={ChildRef} callparentfunction={() => setIsNavExpanded} />
+    <MobileMenu  ref={ChildRef} />
     </>
   )
 }

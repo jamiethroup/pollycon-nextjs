@@ -1,26 +1,44 @@
 import React, { useState, useEffect } from "react";
 
-// eslint-disable-next-line react/display-name
-const ModeToggle = () => {
-  const [currentState, setCurrentState] = useState('Unchecked')
+export const Checkbox = () => {
+  const [isChecked, setIsChecked] = useState(false)
+
+  const checkHandler = () => {
+    setIsChecked(!isChecked)
+  }
+
+  // Create a click event for the checkbox with the id of checkbox
+  const handleClick = (event:React.MouseEvent<HTMLInputElement>) => {
+    let switcher = event.target as HTMLInputElement;
+    switcher.checked === true ? changeMode('light') : changeMode('dark');
+  }
 
   const changeMode = (mode: string) => {
     mode == 'dark' ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark');
     localStorage.theme = mode;
   }
-  const handleClick = (event: React.MouseEvent<HTMLInputElement>) => {
-    localStorage.theme = 'dark'
-    event.target.checked === true ? changeMode('light') : changeMode('dark');
-  }
-  useEffect( () => {
-    console.log(localStorage.theme);
-    localStorage.theme !== 'dark' ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark');
+  // Use the useEffect hook to set the theme on page load
+  useEffect(() => {
+    if (localStorage.theme === 'dark') {
+      changeMode('dark')
+      setIsChecked(false)
+    } else {
+      changeMode('light')
+      setIsChecked(true)
+    }
+  }, [])
+  
 
-  }, [] );
   return (
     <>
-    <input className="sr-only checkbox" type="checkbox" id="checkbox" 
-        onClick={(event) => handleClick(event)} />
+    <input
+      className="sr-only checkbox"
+      type="checkbox"
+      id="checkbox"
+      onClick={(event) => handleClick(event)}
+      checked={isChecked}
+      onChange={checkHandler}
+    />
     <label className="label" htmlFor="checkbox">
       <div className="head ml-auto md:ml-0">
         <div className="face">
@@ -30,7 +48,15 @@ const ModeToggle = () => {
       </div>
     </label>
     </>
-  );
-};
+  )
+}
+
+function ModeToggle() {
+  return (
+    <div className="App">
+      <Checkbox />
+    </div>
+  )
+}
 
 export default ModeToggle

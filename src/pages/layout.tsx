@@ -29,11 +29,6 @@ const Layout = ({children}: Props) => {
   useEffect( () => {
     // Variables
     const footer = document.querySelector('footer')!;
-    // Below is the code to toggle dark mode// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      localStorage.theme = 'dark'
-      document.documentElement.classList.add('dark')
-    }
     const handler = (entries: { isIntersecting: any; }[]) => {
       (!entries[0].isIntersecting) ? null : document.documentElement.classList.add('dark');
     }
