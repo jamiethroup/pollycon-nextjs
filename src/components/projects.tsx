@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import sal from 'sal.js'
 // Images
 import blackAxeTattoo from '../../public/images/blackaxetattoo.png'
 import louLouImages from '../../public/images/loulouimages.png'

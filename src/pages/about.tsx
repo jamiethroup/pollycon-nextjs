@@ -1,5 +1,4 @@
 import React from 'react';
-import sal from 'sal.js'
 import Image from 'next/image';
 
 const jobs = [

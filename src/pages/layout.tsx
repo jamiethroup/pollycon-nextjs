@@ -7,6 +7,15 @@ import { Cormorant_Infant, Outfit } from 'next/font/google';
 import { useRouter } from 'next/router';
 import sal from 'sal.js'
 
+const hasDocument = typeof document === 'object';
+const hasWindow = typeof window === 'object';
+
+const isBrowser = hasDocument && hasWindow;
+
+if (isBrowser) {
+  sal();
+}
+
 const outfit = Outfit({
   subsets: ['latin'],
   variable: '--font-outfit',
@@ -25,7 +34,6 @@ type Props = {
  
 const Layout = ({children}: Props) => {
   const { pathname } = useRouter();
-  sal();
   useEffect( () => {
     // Variables
     const footer = document.querySelector('footer')!;
