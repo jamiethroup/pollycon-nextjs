@@ -48,7 +48,6 @@ const jobs = [
 
 
 export default function About() {
-  sal();
   return (
   <>
   <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-40 md:pb-20">
