@@ -6,7 +6,7 @@ import Footer from '@/components/footer'
 import { Cormorant_Infant, Outfit } from 'next/font/google';
 import { useRouter } from 'next/router';
 import sal from 'sal.js'
-
+import { Analytics } from '@vercel/analytics/react';
 const hasDocument = typeof document === 'object';
 const hasWindow = typeof window === 'object';
 
@@ -49,6 +49,7 @@ const Layout = ({children}: Props) => {
       <Header/>
             <main>{children}</main>
       <Footer/> 
+      <Analytics />
     </div>
     </>
   );
