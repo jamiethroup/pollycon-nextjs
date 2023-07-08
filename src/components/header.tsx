@@ -35,8 +35,8 @@ export default function Header() {
   }
   return (
     <>
-    <header className='absolute z-50 top-0 left-0 w-full'>
-      <div className='container max-w-7xl mx-auto grid grid-cols-12 py-6 px-6'>
+    <header className='absolute z-50 top-0 left-0 pt-10 w-full'>
+      <div className='container max-w-7xl mx-auto grid grid-cols-12 py-6 px-10'>
         <div className="col-span-6 md:col-span-2">
           <Link href='/'>
             <div className="hidden">Pollycon</div>
@@ -58,11 +58,11 @@ export default function Header() {
             <ul className='flex items-center flex-1 gap-8'>
             {links.map((link, i) => (
               <li key={link.path}>
-                <Link className='font-outfit text-gray-700 block text-sm hover:-translate-y-0.5 duration-150 font-medium' href={link.path}>{link.label}</Link>
+                <Link className='font-outfit text-neutral-800 dark:text-white block text-lg hover:-translate-y-0.5 hover:text-emerald-600 duration-150 font-medium' href={link.path}>{link.label}</Link>
               </li>
             ))}
             <li>
-              <a className='contact-link border border-white text-gray-700 flex items-center gap-1 rounded-full py-1.5 px-3 -ml-3 font-outfit text-sm duration-150 ease-in-out hover:bg-black hover:text-white font-medium' href='mailto:hello@pollycon.co.uk?subject=Contact from Pollycon Website'>
+              <a className='contact-link border border-white text-neutral-800 flex items-center gap-1 rounded-full py-1.5 px-3 -ml-3 font-outfit text-lg duration-150 ease-in-out hover:bg-black hover:text-white font-medium' href='mailto:hello@pollycon.co.uk?subject=Contact from Pollycon Website'>
                 <span>{strings.contact_label}</span>
                 <svg className='w-4' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                   <path className='fill-white' d="M19.47 31a2 2 0 0 1-1.8-1.09l-4-7.57a1 1 0 0 1 1.77-.93l4 7.57L29 3.06 3 12.49l9.8 5.26 8.32-8.32a1 1 0 0 1 1.42 1.42l-8.85 8.84a1 1 0 0 1-1.17.18L2.09 14.33a2 2 0 0 1 .25-3.72l25.91-9.48a2 2 0 0 1 2.62 2.62l-9.48 25.91A2 2 0 0 1 19.61 31Z" data-name="Layer 45"/>

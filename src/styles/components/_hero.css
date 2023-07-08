@@ -16,15 +16,8 @@
 .waveWrapper {
   @apply overflow-hidden relative left-0 right-0 top-0 m-auto;
 }
-@media (min-width: 750px) {
-  .waveWrapper {
-    max-height: 90vh;
-    height: 100vw;
-  }
-}
 .waveEl {
-  @apply absolute h-full w-full overflow-hidden top-0;
-  background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+  @apply absolute h-full w-full overflow-hidden top-0 bg-gradient-to-b from-emerald-300 to-emerald-800;
 }
 .wave-top {
   @apply z-20 opacity-50;

@@ -6,6 +6,7 @@ export default function Document() {
       <Head />
       <meta name="view-transition" content="same-origin" />
       <body>
+        <div className="border-[20px] h-full w-full fixed top-0 left-0 z-30 pointer-events-none border-emerald-600"></div>
         <Main />
         <NextScript />
       </body>

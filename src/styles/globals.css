@@ -125,7 +125,7 @@ main, footer {
 } 
 
 #index header nav ul li a { 
-    @apply text-white; 
+    /* @apply text-white;  */
 }
 
 #index header #header__logo path {
