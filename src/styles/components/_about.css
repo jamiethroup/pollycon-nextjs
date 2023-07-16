@@ -27,25 +27,21 @@
 }
 
 .aboutCardSwiper .swiper-slide:nth-child(1n) {
-  background-image: url('../../../public/images/jamie-lucy.webp');
   background-size: cover;
   background-position: center center;
 }
 
 .aboutCardSwiper .swiper-slide:nth-child(2n) {
-  background-image: url('../../../public/images/jamie-kids.webp');
   background-size: cover;
   background-position: center center;
 }
  
 .aboutCardSwiper .swiper-slide:nth-child(3n) {
-  background-image: url('../../../public/images/zelda-link.webp');
   background-size: cover;
   background-position: center center;
 }
 
 .aboutCardSwiper .swiper-slide:nth-child(4n) {
-  background-image: url('../../../public/images/jamie-patriots.webp');
   background-size: cover;
   background-position: center center;
 }

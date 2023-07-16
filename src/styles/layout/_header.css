@@ -1,0 +1,127 @@
+
+/* Header */
+.contact-link,
+.contact-link svg { 
+  @apply duration-300 ease-in-out;
+} 
+
+
+.contact-link {
+  @apply border border-neutral-800 text-neutral-800 flex items-center gap-1 rounded-full py-1.5 px-3 -ml-3 font-outfit text-lg duration-150 ease-in-out hover:bg-neutral-800 hover:text-white font-medium;
+
+  * {
+    @apply duration-300 ease-in-out;
+  }
+  
+  &:hover {
+    svg {
+      @apply rotate-45 duration-300 ease-in-out;
+    }
+
+    path {
+      @apply fill-white duration-300 ease-in-out;
+    }
+  }
+}
+
+.header__nav-link {
+  @apply font-outfit text-neutral-800 block text-lg hover:-translate-y-0.5 hover:text-emerald-600 duration-150 font-medium;
+}
+
+header {
+  #header__logo path {
+    @apply fill-neutral-800;
+  }
+}
+
+/* Dark Mode */
+html.dark {
+  .header__nav-link {
+    @apply text-white;
+  }
+
+  header {
+    #header__logo path {
+      @apply fill-white;
+    }
+  }
+
+  .contact-link {
+    @apply text-white border-white hover:bg-white hover:text-black;
+
+    svg {
+      @apply fill-white;
+    }
+
+    &:hover {
+      path {
+        @apply fill-neutral-800
+      }
+    }
+  }
+}
+
+.menu-toggle {
+  @apply flex items-center justify-center p-0 rounded-md transition duration-300 w-20 ease-in-out;
+}
+
+.menu-icon {
+  @apply w-6 h-6 border-b-2 border-white rounded-sm bg-transparent;
+}
+
+.menu-icon.lines::before,
+.menu-icon.lines::after {
+  @apply content-[''] block w-full h-0.5 bg-white rounded-full transition-all duration-300;
+}
+
+.menu-icon.lines::before {
+  @apply mb-[9px] transform origin-right;
+}
+
+.menu-icon.lines::after {
+  @apply mt-1 transform origin-left;
+}
+
+.menu-icon.cross::before,
+.menu-icon.cross::after {
+  @apply content-[''] block w-full h-0.5 bg-white rounded-full transition-all duration-300;
+}
+
+.menu-icon.cross::before {
+  @apply transform rotate-45 origin-center;
+}
+
+.menu-icon.cross::after {
+  @apply transform -rotate-45 origin-center;
+}
+
+.mobile-menu {
+  @apply fixed top-0 right-0 bottom-0 left-0 p-4 z-50 flex items-end;
+  z-index: 9999;
+}
+
+.menu-items {
+  @apply space-y-4;
+}
+
+.menu-item {
+  @apply text-white font-bold font-outfit text-2xl;
+}
+
+.backdrop {
+  backdrop-filter: blur(8px);
+  @apply fixed inset-0 z-30 bg-white bg-opacity-[1%]  pointer-events-none transition ease-linear duration-300;
+}
+
+.mobile-menu.menu-open {
+  @apply absolute top-0 delay-500 left-0 bg-opacity-80 transition ease-linear duration-300 z-50;
+  /* Additional menu-open styles if needed */
+}
+
+.mobile-menu.menu-open .menu-items {
+  @apply opacity-100 translate-x-0 delay-500;
+}
+
+.mobile-menu:not(.menu-open) .menu-items {
+  @apply opacity-0 -translate-x-full;
+}

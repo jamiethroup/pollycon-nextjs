@@ -1,69 +1,19 @@
+#section-hero {
+  h2 {
+    @apply text-neutral-800 text-[20vw] leading-[20vw] md:text-[10vw] md:leading-[10vw] font-bold max-w-5xl uppercase text-center;
 
-/* Wave Animation */
-
-@keyframes move_wave {
-  0% {
-    transform: translateX(0) translateZ(0) scaleY(1);
-  }
-  50% {
-    transform: translateX(-25%) translateZ(0) scaleY(0.55);
-  }
-  100% {
-    transform: translateX(-50%) translateZ(0) scaleY(1);
+    span  {
+      @apply block md:inline-block;
+    }
   }
 }
 
-.waveWrapper {
-  @apply overflow-hidden relative left-0 right-0 top-0 m-auto;
-}
-.waveEl {
-  @apply absolute h-full w-full overflow-hidden top-0 bg-gradient-to-b from-emerald-300 to-emerald-800;
-}
-.wave-top {
-  @apply z-20 opacity-50;
-}
-.wave-middle {
-  @apply z-10 opacity-75;
-}
-.wave-bottom {
-  z-index: 5;
-}
-.wave {
-  @apply absolute left-0 h-full;
-  width: 200%;
-  background-repeat: repeat no-repeat;
-  background-position: 0 bottom;
-  transform-origin: center bottom;
-}
-.wave-top__el {
-  background-size: 50% 100px;
-}
-.waveAnimation .wave-top__el {
-  -webkit-animation: move-wave 3s;
-  animation: move-wave 3s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-.wave-middle__el {
-  background-size: 50% 120px;
-}
-.waveAnimation .wave-middle__el {
-  animation: move_wave 10s linear infinite;
-}
-.wave-bottom__el {
-  background-size: 50% 100px;
-}
-.waveAnimation .wave-bottom__el {
-  animation: move_wave 15s linear infinite;
-}
-
-.dark  .waveAnimation .wave {
-  background-image: url("../../../public/images/wave-dark.png");
-  @apply transition-all duration-200 ease-in-out;
-  
-}
-
-.waveAnimation .wave {
-  background-image: url("../../../public/images/wave-light.png");
-    @apply transition-all duration-200 ease-in-out;
+html.dark {
+  h2 {
+    @apply text-white;
+  }#section-hero {
+    h2 {
+      @apply text-white;
+    }
+  }
 }

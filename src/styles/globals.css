@@ -1,5 +1,9 @@
+/* Layout */
+@import './layout/_header.css';
+@import './layout/_typography.css';
+@import './layout/_inputs.css';
 
-
+/* Components */
 @import './components/_about.css';
 @import './components/_burgermenu.css';
 @import './components/_buttons.css';
@@ -11,6 +15,7 @@
 @import './components/_projects.css';
 @import './vendor/_sal.css';
 
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,96 +43,36 @@ span {
   @apply font-outfit;
 }
 
-html.dark body {
-  @apply bg-neutral-900
+html.dark {
+  @apply transition-all duration-200 ease-in-out;
+
+  body {
+    @apply bg-neutral-900
+  }
 }
 
 html:not(.dark) {
   @apply transition-all duration-200 ease-in-out;
+
+  .site-logo path {
+    @apply fill-slate-800;
+  }
 }
 
-html body, html.dark body {
+html body,
+html.dark body {
   @apply transition-all duration-200 ease-in-out;
-}
-
-html:not(.dark) .site-logo path {
-	@apply fill-slate-800;
-}
-
-html.dark {
-  @apply transition-all duration-200 ease-in-out;
-}
-
-html.dark p {
-  @apply text-neutral-400;
-}
-
-html.dark h2,
-html.dark h3,
-html.dark h4,
-html.dark h5 {
-	@apply text-white;
-}
-/* Typography */
-
-h2 {
-  @apply font-outfit text-3xl text-white;
-}
-
-h3 {
-  @apply font-cormorant text-2xl md:text-6xl max-w-3xl font-light text-white;
-}
-
-h4 {
-  @apply font-cormorant text-5xl max-w-2xl font-normal text-gray-700;
 }
 
 img, video {
   width: 100%;
 }
 
-/* Header */
-.contact-link,
-.contact-link svg { 
-  @apply duration-300 ease-in-out;
-} 
-
-.contact-link:hover svg {
-  @apply rotate-45 duration-300 ease-in-out;
-}
-
-.contact-link:hover path {
-  @apply fill-white duration-300 ease-in-out;
-}
-
-input[type="text"], textarea {
-  @apply bg-white border mb-5 border-gray-400 focus:border-red-500 active:border-red-500 focus:rounded-2xl duration-200 hover:border-red-500 rounded-sm resize-none p-2;
-}
-
-label {
-  @apply fixed z-50 bottom-5 right-5 shadow-slate-900 shadow-lg p-3 leading-none rounded-full bg-white;
-}
-
-button[type="submit"] {
-  @apply bg-green-400 text-white rounded-full text-xs font-outfit uppercase tracking-wide py-2 px-4 hover:bg-green-500 duration-200;
-}
-
 .modal {
   @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-40 items-center justify-center flex-row hidden;
-}
-
-form {
-  @apply bg-white p-10 rounded-md shadow-slate-400 shadow-md;
 }
 
 main, footer {
   @apply relative z-10
 } 
 
-#index header nav ul li a { 
-    /* @apply text-white;  */
-}
-
-#index header #header__logo path {
-  @apply fill-white;
-}

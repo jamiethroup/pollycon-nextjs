@@ -50,7 +50,7 @@ const jobs = [
 export default function About() {
   return (
   <>
-  <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-40 md:pb-20">
+  <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-40 md:pb-20 bg-green-500">
     <div className="grid grid-cols-12">
       <div className="col-span-12 md:col-start-2 md:col-end-12 my-40">
         <h5  

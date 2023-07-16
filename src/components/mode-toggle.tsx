@@ -39,8 +39,8 @@ export const Checkbox = () => {
       checked={isChecked}
       onChange={checkHandler}
     />
-    <label className="label" htmlFor="checkbox">
-      <div className="head ml-auto md:ml-0">
+    <label className="label ml-0 md:ml-4" htmlFor="checkbox">
+      <div className="head md:ml-0">
         <div className="face">
           <div className="face__smile"></div>
           <div className="face__sleep"></div>
