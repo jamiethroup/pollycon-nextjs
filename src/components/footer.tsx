@@ -12,23 +12,15 @@ const links = [
   {
     "label": "About",
     "path": "/about",
-  },
-  {
-    "label": "Words",
-    "path": "/words",
-  },
-  {
-    "label": "Work",
-    "path": "/work",
-  },
+  }
 ]
 
 export default function Footer() {
   return (
     <>
-    <footer>
-      <div className='container mx-auto px-6 max-w-7xl py-10 md:py-40'>
-        <div className="grid grid-cols-12 md:gap-20">
+    <footer className='px-4'>
+      <div className='container mx-auto max-w-7xl py-10 md:py-40'>
+        <div className="grid grid-cols-12 md:gap-20 px-6">
           <div
             className="col-span-12 md:col-span-6 h-full text-center"
           >

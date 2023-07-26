@@ -1,6 +1,6 @@
 #section-hero {
   h2 {
-    @apply text-neutral-800 text-[20vw] leading-[20vw] md:text-[10vw] md:leading-[10vw] font-bold max-w-5xl uppercase text-center;
+    @apply text-neutral-800 text-[20vw] leading-[20vw] md:text-[10vw] md:leading-[10vw] 2xl:text-[5vw] 2xl:leading-[5vw] font-bold max-w-5xl uppercase text-center;
 
     span  {
       @apply block md:inline-block;

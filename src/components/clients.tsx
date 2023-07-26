@@ -1,152 +1,65 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 // Images
-import beis from '../../public/images/clients/beis.webp'
-import costcutter from '../../public/images/clients/costcutter.webp'
-import finnmark from '../../public/images/clients/finnmark.webp'
-import laredoute from '../../public/images/clients/laredoute.webp'
-import lvmh from '../../public/images/clients/lvmh.webp'
-import mec from '../../public/images/clients/mec.webp'
-import npower from '../../public/images/clients/npower.webp'
-import travelopia from '../../public/images/clients/travelopia.webp'
+import beis from '../../public/images/clients/beis.svg'
+import costcutter from '../../public/images/clients/costcutter.svg'
+import laredoute from '../../public/images/clients/laredoute.svg'
+import lvmh from '../../public/images/clients/lvmh.svg'
+import vbb from '../../public/images/clients/vbb.svg'
+import npower from '../../public/images/clients/npower.svg'
+
+// Create array of image names
+const imageNames = [
+  beis,
+  costcutter,
+  laredoute,
+  lvmh,
+  vbb,
+  npower,
+];
+
+function getRandomNumberUnder1000() {
+  return Math.floor(Math.random() * 1000);
+}
 
 export default function Clients() {
   return (
-    <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pb-20">
+    <section className=" bg-emerald-600">
+    <div className="container mx-auto px-6 max-w-7xl pt-0 mb-10 pb-10">
       <div className='px-6 py-20 md:px-0 grid md:grid-cols-12 md:gap-10'>
         <div className="col-span-12 text-center">
           <h5 
-          className='font-outfit uppercase font-light tracking-wide'
+          className='font-outfit max-w-3xl leading-relaxed mx-auto font-light text-white mb-10 tracking-wide'
           data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="500"
           data-sal-easing="ease-out-back"
           >
-            Other Clients
+          Over the last ten years, I&rsquo;ve been lucky enough to work with some of the best agencies in the UK. Here&rsquo;s some of the clients I&rsquo;ve worked with while at those agencies...
           </h5>
-          <h3 
-          className='text-gray-800 text-3xl mt-4 mx-auto mb-20'
-          data-sal="slide-up"
-          data-sal-delay="700"
-          data-sal-duration="500"
-          data-sal-easing="ease-out-back"
-          >
-          That I&rsquo;ve worked with during my career
-          </h3>
         </div>
-        <div className="col-span-6 md:col-span-3">
+        <div className="col-span-12 flex gap-10 justify-evenly">
+          {imageNames.map((imageName, index) => (
             <figure
+              className='flex items-center h-full justify-center'
               data-sal="slide-up"
-              data-sal-delay="100"
-              data-sal-duration="200"
+              data-sal-delay={(Math.floor(Math.random() * 10) + 1) * 100}
+              data-sal-duration={(Math.floor(Math.random() * 10) + 1) * 100}
               data-sal-easing="ease-out-back"
+              key={`${imageName}-${index}`}
             >
               <Image
-                className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
-                src={beis}
+                className='grayscale max-h-20 xl:max-h-32 h-full w-auto hover:grayscale duration-300 ease-in-linear hover:scale-10 mx-auto'
+                src={imageName}
                 alt="Picture of the author"
+                width={200}
+                height={200}
               />
             </figure>
-        </div>
-        <div className="col-span-6 md:col-span-3">
-            <figure
-              data-sal="slide-up"
-              data-sal-delay="300"
-              data-sal-duration="200"
-              data-sal-easing="ease-out-back"
-            >
-              <Image
-                className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
-                src={costcutter}
-                alt="Picture of the author"
-              />
-            </figure>
-        </div>
-        <div className="col-span-6 md:col-span-3">
-            <figure
-              data-sal="slide-up"
-              data-sal-delay="500"
-              data-sal-duration="200"
-              data-sal-easing="ease-out-back"
-            >
-              <Image
-                className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
-                src={finnmark}
-                alt="Picture of the author"
-              />
-            </figure>
-        </div>
-        <div className="col-span-6 md:col-span-3">
-            <figure
-              data-sal="slide-up"
-              data-sal-delay="100"
-              data-sal-duration="200"
-              data-sal-easing="ease-out-back"
-            >
-              <Image
-                className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
-                src={laredoute}
-                alt="Picture of the author"
-              />
-            </figure>
-        </div>
-        <div className="col-span-6 md:col-span-3">
-            <figure
-              data-sal="slide-up"
-              data-sal-delay="300"
-              data-sal-duration="200"
-              data-sal-easing="ease-out-back"
-            >
-              <Image
-                className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
-                src={lvmh}
-                alt="Picture of the author"
-              />
-            </figure>
-        </div>
-        <div className="col-span-6 md:col-span-3">
-            <figure
-              data-sal="slide-up"
-              data-sal-delay="500"
-              data-sal-duration="200"
-              data-sal-easing="ease-out-back"
-            >
-              <Image
-                className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
-                src={mec}
-                alt="Picture of the author"
-              />
-            </figure>
-        </div>
-        <div className="col-span-6 md:col-span-3">
-            <figure
-              data-sal="slide-up"
-              data-sal-delay="100"
-              data-sal-duration="200"
-              data-sal-easing="ease-out-back"
-            >
-              <Image
-                className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
-                src={npower}
-                alt="Picture of the author"
-              />
-            </figure>
-        </div>
-        <div className="col-span-6 md:col-span-3">
-            <figure
-              data-sal="slide-up"
-              data-sal-delay="300"
-              data-sal-duration="200"
-              data-sal-easing="ease-out-back"
-            >
-              <Image
-                className='grayscale hover:grayscale-0 duration-300 ease-in-linear hover:scale-105 max-w-xs mx-auto'
-                src={travelopia}
-                alt="Picture of the author"
-              />
-            </figure>
+          ))}
         </div>
       </div>
-      </section>
+    </div>
+    </section>
   )
 }

@@ -15,15 +15,7 @@ const links = [
   {
     label: "About",
     path: "/about",
-  },
-  {
-    label: "Words",
-    path: "/words",
-  },
-  {
-    label: "Work",
-    path: "/work",
-  },
+  }
 ];
 
 export default function Header() {
@@ -36,8 +28,8 @@ export default function Header() {
 
   return (
     <>
-      <header className='fixed z-50 top-0 left-0 pt-10 w-full'>
-        <div className='container max-w-7xl mx-auto grid grid-cols-12 py-4 lg:py-6 px-14 lg:px-10'>
+      <header className='fixed z-50 top-0 left-0 w-full'>
+        <div className='container max-w-7xl mx-auto grid grid-cols-12 py-4 lg:py-20 px-6 lg:px-10'>
           <div className="col-span-6 md:col-span-2">
             <Link href='/'>
               <div className="hidden">Pollycon</div>
@@ -46,10 +38,10 @@ export default function Header() {
               </svg>
             </Link>
           </div>
-          <div className="col-span-4 flex items-center justify-end md:hidden">
-      <MobileMenu ref={childRef} />
+          <div className="col-span-5 flex items-center justify-end md:hidden pr-4">
+            <MobileMenu />
           </div>
-          <div className="col-span-2 md:col-span-10 flex items-center justify-end">
+          <div className="col-span-1 md:col-span-10 flex items-center justify-end">
             <nav className="hidden md:flex">
               <ul className='flex items-center flex-1 gap-8'>
                 {links.map((link, i) => (

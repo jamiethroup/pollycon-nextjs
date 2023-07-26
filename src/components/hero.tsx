@@ -2,9 +2,7 @@ export default function Header() {
   return (
     <>
     <section id="section-hero" className="h-screen flex items-center justify-center">
-      <h2 
-        className="text-[10vw] leading-[10vw] font-bold max-w-5xl uppercase text-center"
-      >
+      <h2>
       <span
       data-sal="slide-up"
       data-sal-delay="200"

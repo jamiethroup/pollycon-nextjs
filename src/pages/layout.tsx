@@ -1,20 +1,11 @@
-
-
-import { ReactNode, useEffect } from "react";
+import React, { ReactNode, useEffect } from "react";
+import { useRouter } from 'next/router';
+import sal from 'sal.js';
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { Cormorant_Infant, Outfit } from 'next/font/google';
-import { useRouter } from 'next/router';
-import sal from 'sal.js'
 import { Analytics } from '@vercel/analytics/react';
-const hasDocument = typeof document === 'object';
-const hasWindow = typeof window === 'object';
-
-const isBrowser = hasDocument && hasWindow;
-
-if (isBrowser) {
-  sal();
-}
+import ScrollClassAdder from '@/components/scrollclassadder'; // Adjust the import path if needed
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -26,34 +17,56 @@ const cormorant = Cormorant_Infant({
   variable: '--font-cormorant',
   weight: "300"
 });
-
 // Create a type for the children prop
 type Props = {
   children: ReactNode;
 };
- 
-const Layout = ({children}: Props) => {
+
+// Intersection Observer setup (define it outside the component)
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0,
+};
+
+const Layout = ({ children }: Props) => {
   const { pathname } = useRouter();
-  useEffect( () => {
-    // Variables
-    const footer = document.querySelector('footer')!;
-    const handler = (entries: { isIntersecting: any; }[]) => {
-      (!entries[0].isIntersecting) ? null : document.documentElement.classList.add('dark');
+
+  useEffect(() => {
+    // Only run the effect in the browser
+    if (typeof window === 'undefined') return;
+
+    // Initialize the IntersectionObserver once
+    const observer = new IntersectionObserver((entries) => {
+      const footer = document.querySelector('footer');
+      if (footer && entries[0].isIntersecting) {
+        document.documentElement.classList.add('dark');
+      }
+    }, observerOptions);
+
+    // Start observing the footer
+    const footer = document.querySelector('footer');
+    if (footer) {
+      observer.observe(footer);
     }
-    const observer = new window.IntersectionObserver(handler)
-    observer.observe(footer)
-  }, [] );
+
+    // Initialize Scroll Animation Library (sal)
+    sal();
+  }, []);
+
+  const pageId = pathname === "/" ? "index" : pathname.replace('/', '');
+
   return (
     <>
-    <div id={pathname.length == 1 ? 'index' : pathname.replace('/', '')} className={`${outfit.variable} ${cormorant.variable}`}>
-      <Header/>
-            <main>{children}</main>
-      <Footer/> 
-      <Analytics />
-    </div>
+      <div id={pageId} className={`${outfit.variable} ${pathname.length === 1 ? 'index' : pathname.replace('/', '')}`}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <Analytics />
+        <ScrollClassAdder />
+      </div>
     </>
   );
 };
 
 export default Layout;
- 

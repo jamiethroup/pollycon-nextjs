@@ -10,6 +10,10 @@
   @apply bg-green-300 text-green-700; 
 }
 
+.rounded-pill:nth-of-type(3) { 
+  @apply bg-red-300 text-red-700; 
+}
+
 .job__company  {
   @apply mb-2;
 }

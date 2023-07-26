@@ -50,7 +50,7 @@ const jobs = [
 export default function About() {
   return (
   <>
-  <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-40 md:pb-20 bg-green-500">
+  <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-40 md:pb-20">
     <div className="grid grid-cols-12">
       <div className="col-span-12 md:col-start-2 md:col-end-12 my-40">
         <h5  
@@ -82,7 +82,7 @@ export default function About() {
         </p>
       </div>
     </div>
-    <div className="grid grid-cols-12 gap-10 items-center">
+    <div className="grid grid-cols-12 gap-10 items-center px-4">
       <div className="col-span-3">
         <Image src="/images/spaceman-jamie.webp" width="56" height="56" alt="me"
         data-sal="slide-up"
@@ -105,7 +105,7 @@ export default function About() {
         data-sal-easing="ease-out-back" />
       </div>
     </div>
-    <div className="grid grid-cols-12 gap-10 mt-40">
+    <div className="grid grid-cols-12 gap-10 mt-40 px-4">
       <div className="col-span-5">
         <div className="sticky top-10">
         <h3 className='text-gray-700'>Experience</h3>

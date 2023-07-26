@@ -40,8 +40,8 @@
 .head {
   position: relative;
   z-index: 1;
-  width: 1em;
-  height: 1em;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: var(--color-face);
   transition: inherit;
