@@ -33,24 +33,6 @@ const Layout = ({ children }: Props) => {
   const { pathname } = useRouter();
 
   useEffect(() => {
-    // Only run the effect in the browser
-    if (typeof window === 'undefined') return;
-
-    // Initialize the IntersectionObserver once
-    const observer = new IntersectionObserver((entries) => {
-      const footer = document.querySelector('footer');
-      if (footer && entries[0].isIntersecting) {
-        document.documentElement.classList.add('dark');
-      }
-    }, observerOptions);
-
-    // Start observing the footer
-    const footer = document.querySelector('footer');
-    if (footer) {
-      observer.observe(footer);
-    }
-
-    // Initialize Scroll Animation Library (sal)
     sal();
   }, []);
 

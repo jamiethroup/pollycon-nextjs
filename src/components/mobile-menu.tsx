@@ -9,7 +9,7 @@ const MobileMenu = () => {
   };
 
   return (
-    <div className="mobile-menu">
+    <div className="mobile-menu hidden">
       <button className="menu-toggle" onClick={toggleMenu}>
         Menu
       </button>

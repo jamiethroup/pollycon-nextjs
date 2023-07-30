@@ -30,22 +30,14 @@ export default function Clients() {
         <div className="col-span-12 text-center">
           <h5 
           className='font-outfit max-w-3xl leading-relaxed mx-auto font-light text-white mb-10 tracking-wide'
-          data-sal="slide-up"
-          data-sal-delay="200"
-          data-sal-duration="500"
-          data-sal-easing="ease-out-back"
           >
           Over the last ten years, I&rsquo;ve been lucky enough to work with some of the best agencies in the UK. Here&rsquo;s some of the clients I&rsquo;ve worked with while at those agencies...
           </h5>
         </div>
-        <div className="col-span-12 flex gap-10 justify-evenly">
+        <div className="col-span-12 grid grid-cols-3 lg:flex gap-10 justify-evenly">
           {imageNames.map((imageName, index) => (
             <figure
-              className='flex items-center h-full justify-center'
-              data-sal="slide-up"
-              data-sal-delay={(Math.floor(Math.random() * 10) + 1) * 100}
-              data-sal-duration={(Math.floor(Math.random() * 10) + 1) * 100}
-              data-sal-easing="ease-out-back"
+              className='col-span-1 flex items-center h-full justify-center'
               key={`${imageName}-${index}`}
             >
               <Image

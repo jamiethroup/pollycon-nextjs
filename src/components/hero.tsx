@@ -1,40 +1,24 @@
 export default function Header() {
   return (
     <>
-    <section id="section-hero" className="h-screen flex items-center justify-center">
+    <section id="section-hero" className="pt-40 pb-0 md:pt-0 md:pb-0 md:h-screen flex items-center justify-center">
       <h2>
       <span
-      data-sal="slide-up"
-      data-sal-delay="200"
-      data-sal-duration="200"
-      data-sal-easing="ease-out-back"
       className="inline-block"
       >
         Eat.
       </span>
         <span
-        data-sal="slide-up"
-        data-sal-delay="400"
-        data-sal-duration="2000"
-        data-sal-easing="ease-out-back"
         className="inline-block"
         >
           Sleep.
         </span>
         <span
-        data-sal="slide-up"
-        data-sal-delay="600"
-        data-sal-duration="2000"
-        data-sal-easing="ease-out-back"
         className="inline-block"
         >
           Code.
         </span>
         <span
-        data-sal="slide-up"
-        data-sal-delay="800"
-        data-sal-duration="2000"
-        data-sal-easing="ease-out-back"
         className="inline-block"
         >
           Repeat.
@@ -47,27 +31,13 @@ export default function Header() {
         <div className="container px-6 mt-32 mb-40 md:mt-0 md:mb-0 max-w-7xl mx-auto">
           <h2
             className='mb-4'
-            data-sal="slide-up"
-            data-sal-delay="200"
-            data-sal-duration="500"
-            data-sal-easing="ease-out-back"
           >
             Hola, I&rsquo;m Jamie<span className='animate-wave'>👋</span>
           </h2>
-          <h3
-            data-sal="slide-up"
-            data-sal-delay="700"
-            data-sal-duration="750"
-            data-sal-easing="ease-out-back"
-          >
+          <h3>
             I’m a Senior Web Developer and Shopify Plus Expert based in Yorkshire, United Kingdom.
           </h3>
-          <div
-            data-sal="slide-up"
-            data-sal-delay="1000"
-            data-sal-duration="750"
-            data-sal-easing="ease-out-back"
-          >
+          <div>
             <a
               href="/case-studies"
               className="button mt-10"

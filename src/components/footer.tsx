@@ -18,54 +18,25 @@ const links = [
 export default function Footer() {
   return (
     <>
-    <footer className='px-4'>
-      <div className='container mx-auto max-w-7xl py-10 md:py-40'>
-        <div className="grid grid-cols-12 md:gap-20 px-6">
-          <div
-            className="col-span-12 md:col-span-6 h-full text-center"
-          >
-            <div
-              data-sal="slide-up"
-              data-sal-duration="2000"
-              data-sal-delay="500"
-              data-sal-easing="ease-out-back"
-            >
-              <div className="border border-gray-300 py-16 px-16 md:px-20">
-                <h3 className='text-white text-3xl mb-4'>What I&rsquo;m working on at the moment?</h3>
-                <p className='mb-4 text-sm text-gray-900'>I&rsquo;m currently working full time at <a href='https://bravetheskies.com/' className='underline'>Brave The Skies</a> but I&rsquo;m always playing with something new and I keep it pretty public on  Github.</p>
-                <Link target="_blank" rel="noopener noreferrer" href="https://github.com/jamiethroup" className='inline-flex font-bold text-sm text-white hover:underline'>
-                  Github Linkage
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-span-12 md:col-span-6 h-full text-center mt-20"
-          >
-            <div
-              data-sal="slide-up"
-              data-sal-duration="2000"
-              data-sal-delay="500"
-              data-sal-easing="ease-out-back"
-            >
-              <div className="border border-gray-300 py-16 px-16 md:px-20">
-                <h3 className='text-white text-3xl mb-4'>Want to work together?</h3>
-                <p className='mb-4'>I&rsquo;m always up to work on community or paid for project&rsquo;s!</p>
-                <Link href="mailto:hello@pollycon.co.uk" className='inline-flex font-bold text-sm text-white hover:underline'>
-                  Let&rsquo;s Chat
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="border-t border-gray-300">
-        <div className='container mx-auto px-6 max-w-7xl pb-10 md:pb-20 pt-20'>
+    <footer className='lg:px-4'>
+      <div className="bg-emerald-600">
+        <div className='container mx-auto px-6 max-w-7xl py-14'>
           <div className="grid grid-cols-12">
-          <div className="col-span-12 md:col-span-6">
-            <svg className='w-8 mb-8' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" clipRule="evenodd" viewBox="0 0 35 50">
-              <path className='fill-white' fill="#0d2f3f" fillRule="nonzero" d="M28.761 19.633c-1.5 1.82-3.607 2.743-6.26 2.743H7.564v23.042H3.75V18.61h18.113c1.585 0 2.973-.618 3.91-1.74.79-.948 1.226-2.219 1.226-3.578 0-2.786-1.921-5.668-5.136-5.668H3.75V3.75h18.752c5.746 0 8.363 4.925 8.363 9.5 0 2.47-.747 4.737-2.104 6.383m-17.448 6.494h3.25v19.29h-3.25v-19.29ZM22.502 0H0v11.376h21.863c1.01 0 1.386 1.176 1.386 1.917 0 .476-.13.905-.356 1.176-.14.168-.4.392-1.03.392H0v34.2h18.314V26.127h4.188c3.772 0 6.937-1.421 9.153-4.11 1.91-2.314 2.96-5.428 2.96-8.767C34.615 6.666 30.454 0 22.502 0"/>
-            </svg>
+            <div className="col-span-12 md:col-span-10">
+              <div className="uppercase font-outfit font-medium text-white mb-4">Let&rsquo;s talk about your next project...</div>
+              <h3 className='mb-10 md:mb-0 text-2xl md:text-5xl font-outfit font-semibold text-neutral-100'>hello@pollycon.co.uk</h3>
+            </div>
+            <div className="col-span-12 md:col-span-2">
+              <h3 className='uppercase font-outfit font-medium text-white mb-0'>Quicklinks</h3>
+            <ul className='mt-5'>
+            {links.map((link, i) => (
+              <li key={link.path}>
+                <Link className='font-outfit text-white block text-base hover:-translate-y-0.5 duration-150 mb-4 font-light' href={link.path}>{link.label}</Link>
+              </li>
+            ))}
+            </ul>
+            </div>
+          <div className="col-span-12 md:col-span-6 hidden">
             <p className='font-outfit max-w-md'>Pollycon is the digital playground for Jamie Throup, a senior shopify developer with over 10 years experience in web development</p>
             <ul className='mt-8 flex gap-4'>
               <li>
@@ -110,19 +81,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-12 md:col-span-6">
-            <ul className='grid grid-cols-2 mt-6 md:mt-16 pt-3 max-w-sm ml-auto'>
-            {links.map((link, i) => (
-              <li key={link.path}>
-                <Link className='font-outfit text-white block text-sm hover:-translate-y-0.5 duration-150 mb-10 font-medium' href={link.path}>{link.label}</Link>
-              </li>
-            ))}
-            </ul>
+          <div className="col-span-12 md:col-span-6 hidden">
           </div>
           <div className="col-span-12 mt-10">
             <div className="flex items-center">
-              <p>Built in</p>
-              <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 w-7" fill="none" viewBox="0 0 24 24">
+              {/* Php Year Date Below */}
+              <p className='!text-white text-sm font-outfit'>© {new Date().getFullYear()} Pollycon</p>
+              <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 w-5" fill="none" viewBox="0 0 24 24">
                 <g clipPath="url(#a)">
                   <path fill="#fff" d="M11.214.006c-.052.005-.216.022-.364.033C7.442.347 4.25 2.186 2.226 5.013a11.88 11.88 0 0 0-2.118 5.243c-.096.66-.108.854-.108 1.748s.012 1.089.108 1.748c.652 4.507 3.86 8.293 8.209 9.696.779.251 1.6.422 2.533.526.364.04 1.936.04 2.3 0 1.611-.179 2.977-.578 4.323-1.265.207-.105.247-.134.219-.157-.02-.014-.899-1.194-1.955-2.62l-1.919-2.593-2.404-3.559a342.499 342.499 0 0 0-2.422-3.556c-.009-.003-.018 1.578-.023 3.51-.007 3.38-.01 3.516-.052 3.596a.426.426 0 0 1-.206.213c-.075.038-.14.045-.495.045H7.81l-.108-.068a.44.44 0 0 1-.157-.172l-.05-.105.005-4.704.007-4.706.073-.092a.644.644 0 0 1 .174-.143c.096-.047.133-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 2 2.895 4.362l4.734 7.172 1.9 2.878.097-.063a12.318 12.318 0 0 0 2.465-2.163 11.947 11.947 0 0 0 2.825-6.135c.096-.66.108-.854.108-1.748s-.012-1.088-.108-1.748C23.24 5.75 20.032 1.963 15.683.56a12.6 12.6 0 0 0-2.498-.523c-.226-.024-1.776-.05-1.97-.03Zm4.913 7.26a.473.473 0 0 1 .237.276c.018.06.023 1.365.018 4.305l-.007 4.218-.743-1.14-.746-1.14v-3.066c0-1.983.009-3.097.023-3.151a.478.478 0 0 1 .232-.296c.097-.05.132-.054.5-.054.347 0 .408.005.486.047Z"/>
                 </g>

@@ -70,20 +70,19 @@ const About: React.FC = () => {
     <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:py-10">
       <div className="grid grid-cols-12 pt-40">
         {/* START - Information Slider - Paragraph */}
-        <div className="col-span-8 pl-4 md:col-span-6">
+        <div className="col-span-12 order-2 md:order-1 pl-4 md:col-span-6">
           <Swiper
             {...fadeSwiperOptions}
-            _swiper={setSecondSwiper}
             controller={{ control: firstSwiper }}
             className="aboutContentSwiper"
           >
             {aboutSlides.map((slide, i) => (
               <SwiperSlide className="pr-10 md:pr-0" key={i}>
-                <h4 className="mt-10 text-2xl">{slide.subtitle}</h4>
-                <h2 className="mt-4 max-w-lg leading-normal text-gray-800" data-sal="slide-up" data-sal-delay="350">
+                <h4 className="mt-10 text-sm uppercase">{slide.subtitle}</h4>
+                <h2 className="mt-4 text-4xl max-w-lg leading-normal text-gray-800">
                   {slide.title}
                 </h2>
-                <p className="mt-4 max-w-lg mb-20 md:mb-0 font-light text-base text-gray-800" data-sal="slide-up" data-sal-delay="650">
+                <p className="mt-4 max-w-lg mb-20 md:mb-0 pr-20 font-light text-base text-gray-800">
                   {slide.description}
                 </p>
               </SwiperSlide>
@@ -92,12 +91,12 @@ const About: React.FC = () => {
         </div>
         {/* END - Information Slider - Paragraph */}
         {/* START - Image Slider */}
-        <div className="col-span-4 md:col-span-6">
+        <div className="col-span-12 order-1 md:order-2 md:col-span-6 mr-0 md:mr-0">
           <Swiper
             {...cardsSwiperOptions}
             onSwiper={setFirstSwiper}
             controller={{ control: secondSwiper }}
-            className="aboutCardSwiper max-w-md 2xl:max-w-none"
+            className="aboutCardSwiper scale-75 md:scale-100 max-w-max mr-0 !md:mr-10  2xl:max-w-none"
           >
             {aboutSlides.map((slide, i) => (
               <SwiperSlide key={i}>

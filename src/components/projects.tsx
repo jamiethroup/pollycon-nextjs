@@ -39,19 +39,11 @@ export default function Projects() {
         <div className="col-span-12 md:col-start-2 md:col-end-12 hidden">
           <h5  
           className='font-outfit uppercase font-medium  tracking-wide'
-          data-sal="slide-up"
-          data-sal-delay="200"
-          data-sal-duration="500"
-          data-sal-easing="ease-out-back"
           >
             How I help
           </h5>
           <h3 
           className='text-gray-800 text-4xl md:text-5xl mt-4 max-w-5xl my-20'
-          data-sal="slide-up"
-          data-sal-delay="700"
-          data-sal-duration="500"
-          data-sal-easing="ease-out-back"
           >
             Throughout my career, I&rsquo;ve honed my skills to allow me to create interactive web experiences that are both modern and focused on speed.
           </h3>
@@ -66,10 +58,6 @@ export default function Projects() {
             <div className="image">
               <figure
                 className={projectClass}
-                data-sal="slide-up"
-                data-sal-delay="200"
-                data-sal-duration="500"
-                data-sal-easing="ease-out-back"
               >
               <Link target='_blank' href={url}>
                 <Image
@@ -82,10 +70,6 @@ export default function Projects() {
             </div>
             <div
               className="text"
-              data-sal="slide-up"
-              data-sal-delay="200"
-              data-sal-duration="500"
-              data-sal-easing="ease-out-back"
             >
               <h4
                 className='text-2xl font-outfit font-bold text-neutral-800'

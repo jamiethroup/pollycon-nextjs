@@ -1,5 +1,6 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from 'next/link';
+import sal from 'sal.js';
 import MobileMenu from '@/components/mobile-menu';
 import ModeToggle from '@/components/mode-toggle';
 
@@ -26,6 +27,11 @@ export default function Header() {
     setIsNavExpanded(true);
   };
 
+  // Function to initialize sal() on header mount (optional, if needed)
+  useEffect(() => {
+    sal();
+  }, []);
+
   return (
     <>
       <header className='fixed z-50 top-0 left-0 w-full'>
@@ -46,7 +52,7 @@ export default function Header() {
               <ul className='flex items-center flex-1 gap-8'>
                 {links.map((link, i) => (
                   <li key={link.path}>
-                    <Link className='header__nav-link' href={link.path}>{link.label}</Link>
+                    <Link className='header__nav-link'  href={link.path}>{link.label}</Link>
                   </li>
                 ))}
                 <li>
