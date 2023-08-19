@@ -7,7 +7,7 @@
 
 
 .contact-link {
-  @apply border border-neutral-800 text-neutral-800 flex items-center gap-1 uppercase font-bold rounded-full py-1.5 px-3 -ml-3 font-outfit text-sm duration-150 ease-in-out hover:bg-neutral-800 hover:text-white;
+  @apply border border-neutral-800 text-neutral-800 flex items-center gap-1 uppercase font-semibold rounded-full py-1.5 px-3 -ml-3 font-outfit text-sm duration-150 ease-in-out hover:bg-neutral-800 hover:text-white;
 
   * {
     @apply duration-300 ease-in-out;
@@ -25,7 +25,7 @@
 }
 
 .header__nav-link {
-  @apply font-outfit text-neutral-800 block text-sm hover:-translate-y-0.5 hover:text-emerald-600 duration-150 font-bold uppercase;
+  @apply font-outfit text-neutral-800 block text-sm hover:-translate-y-0.5 hover:text-emerald-600 duration-150 font-semibold uppercase;
 }
 
 header {
@@ -119,7 +119,7 @@ html.dark {
 }
 
 .menu-item {
-  @apply text-white font-bold font-outfit text-2xl;
+  @apply text-white font-semibold font-outfit text-2xl;
 }
 
 .backdrop {

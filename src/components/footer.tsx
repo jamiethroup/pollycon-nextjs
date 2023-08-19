@@ -24,14 +24,14 @@ export default function Footer() {
           <div className="grid grid-cols-12">
             <div className="col-span-12 md:col-span-10">
               <div className="uppercase font-outfit font-medium text-white mb-4">Let&rsquo;s talk about your next project...</div>
-              <h3 className='mb-10 md:mb-0 text-2xl md:text-5xl font-outfit font-semibold text-neutral-100'>hello@pollycon.co.uk</h3>
+              <a href='mailto:hello@pollycon.co.uk' className='mb-10 md:mb-0 text-2xl md:text-5xl font-outfit font-semibold text-neutral-100 hover:underline underline-offset-8'>hello@pollycon.co.uk</a>
             </div>
             <div className="col-span-12 md:col-span-2">
               <h3 className='uppercase font-outfit font-medium text-white mb-0'>Quicklinks</h3>
             <ul className='mt-5'>
             {links.map((link, i) => (
               <li key={link.path}>
-                <Link className='font-outfit text-white block text-base hover:-translate-y-0.5 duration-150 mb-4 font-light' href={link.path}>{link.label}</Link>
+                <Link className='font-outfit text-white block text-base hover:-translate-y-0.5 duration-150 mb-4 font-light hover:underline' href={link.path}>{link.label}</Link>
               </li>
             ))}
             </ul>

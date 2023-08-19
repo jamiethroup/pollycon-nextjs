@@ -1,65 +1,35 @@
 export default function Header() {
   return (
     <>
-    <section id="section-hero" className="pt-40 pb-0 md:pt-0 md:pb-0 md:h-screen flex items-center justify-center">
-      <h2>
-      <span
-      className="inline-block"
-      >
-        Eat.
-      </span>
-        <span
-        className="inline-block"
-        >
-          Sleep.
-        </span>
-        <span
-        className="inline-block"
-        >
-          Code.
-        </span>
-        <span
-        className="inline-block"
-        >
-          Repeat.
-        </span>
-      </h2>
-    </section>
-    <section hidden className="waveWrapper waveAnimation">
-      <h2></h2>
-      <div className="w-full h-[50vh] flex items-center justify-center relative z-30">
-        <div className="container px-6 mt-32 mb-40 md:mt-0 md:mb-0 max-w-7xl mx-auto">
-          <h2
-            className='mb-4'
+      <section id="section-hero" className="pt-40 pb-0 md:pt-0 md:pb-0 md:h-screen flex items-center justify-center relative">
+        <h2>
+          <span
+            className="inline-block"
           >
-            Hola, I&rsquo;m Jamie<span className='animate-wave'>👋</span>
-          </h2>
-          <h3>
-            I’m a Senior Web Developer and Shopify Plus Expert based in Yorkshire, United Kingdom.
-          </h3>
-          <div>
-            <a
-              href="/case-studies"
-              className="button mt-10"
-            >
-              View case studies
-              <svg className='h-6 ml-2' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512">
-                <path className='fill-white' d="m322.7 128.4 100.3 105c6 5.8 9 13.7 9 22.4s-3 16.5-9 22.4L322.7 383.6c-11.9 12.5-31.3 12.5-43.2 0-11.9-12.5-11.9-32.7 0-45.2l48.2-50.4h-217c-17 0-30.7-14.3-30.7-32s13.7-32 30.6-32h217l-48.2-50.4c-11.9-12.5-11.9-32.7 0-45.2 12-12.5 31.3-12.5 43.3 0z" />
-              </svg>
-            </a>
+            Eat.
+          </span>
+          <span
+            className="inline-block"
+          >
+            Sleep.
+          </span>
+          <span
+            className="inline-block"
+          >
+            Code.
+          </span>
+          <span
+            className="inline-block"
+          >
+            Repeat.
+          </span>
+        </h2>
+        <a href="#" className="absolute w-full bottom-20 left-0 text-center">
+          <div className="animate-bounce w-fit mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="scale-150 mx-auto"><path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z" /></svg>
           </div>
-        </div>
-      </div>
-      <div className="waveEl wave-top">
-        <div className="wave wave-top__el"></div>
-      </div>
-      <div className="waveEl wave-middle">
-        <div className="wave wave-middle__el"></div>
-      </div>
-      <div className="waveEl wave-bottom">
-        <div className="wave wave-bottom__el"></div>
-      </div>
-    </section>
+        </a>
+      </section>
     </>
   )
 }

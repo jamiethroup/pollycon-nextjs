@@ -50,21 +50,21 @@ const jobs = [
 export default function About() {
   return (
   <>
-  <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-40 md:pb-20">
+  <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-20 md:pb-20">
     <div className="grid grid-cols-12">
       <div className="col-span-12 md:col-start-2 md:col-end-12 my-40">
         <h5  
-        className='font-outfit uppercase font-bold  tracking-wide'
+        className='font-outfit uppercase font-semibold  tracking-wide'
         >
           How I help
         </h5>
         <h3 
-        className='text-gray-800 text-4xl md:text-5xl md:leading-tight font-bold max-w-4xl mt-6'
+        className='text-gray-800 text-4xl md:text-5xl font-outfit md:leading-tight font-semibold max-w-4xl mt-6'
         >
           In 2023, I&rsquo;ve celebrated my ten years in the development, six of which have been spent working with Shopify.
         </h3>
         <p 
-        className='text-gray-800 font-outfit text-base max-w-3xl font-medium mt-6'
+        className='text-gray-800 font-outfit text-base max-w-3xl font-light leading-relaxed mt-6'
         >
           I&rsquo;ve worked with a wide range of clients, from small businesses to large corporations, and I&rsquo;ve been lucky enough to work with some of the best agencies in the UK.
         </p>
@@ -84,7 +84,7 @@ export default function About() {
     <div className="grid grid-cols-12 lg:gap-10 mt-40 px-4">
       <div className="col-span-12 lg:col-span-5">
         <div className="sticky top-40">
-        <h3 className='text-gray-700 uppercase font-bold'>Experience</h3>
+        <h3 className='text-gray-700 uppercase font-semibold'>Experience</h3>
         <p className='text-gray-700 font-outfit text-lg leading-loose font-light mt-5'>
           I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.
         </p>

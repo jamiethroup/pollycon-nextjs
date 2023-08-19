@@ -1,6 +1,6 @@
 
 .footer__social-icon {
-  @apply inline-flex font-bold text-sm text-white block w-8 h-8 border border-white rounded-full;
+  @apply inline-flex font-semibold text-sm text-white block w-8 h-8 border border-white rounded-full;
 }
 
 .footer__social-icon:hover {

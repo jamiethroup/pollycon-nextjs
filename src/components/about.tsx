@@ -67,7 +67,7 @@ const About: React.FC = () => {
   const [secondSwiper, setSecondSwiper] = useState<SwiperType | null>(null); // Use SwiperType instead of typeof Swiper
 
   return (
-    <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:py-10">
+    <section className="container mx-auto px-20 max-w-7xl pt-0 mb-10 md:py-10">
       <div className="grid grid-cols-12 pt-40">
         {/* START - Information Slider - Paragraph */}
         <div className="col-span-12 order-2 md:order-1 pl-4 md:col-span-6">

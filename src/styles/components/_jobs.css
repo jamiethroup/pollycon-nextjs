@@ -15,14 +15,18 @@
 }
 
 .job__company  {
-  @apply mb-2;
+  @apply mb-2 font-outfit;
 }
 
 .job__title  {
-  @apply font-outfit text-base font-light uppercase tracking-wide text-gray-400;
+  @apply font-outfit text-sm font-light tracking-wider uppercase text-gray-400;
 }
 
 /* About - Job */
 .job__company {
-  @apply text-4xl;
+  @apply text-4xl font-outfit;
+}
+
+.job__description {
+  @apply text-sm font-outfit font-light leading-loose text-gray-500;
 }

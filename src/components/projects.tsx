@@ -72,7 +72,7 @@ export default function Projects() {
               className="text"
             >
               <h4
-                className='text-2xl font-outfit font-bold text-neutral-800'
+                className='text-2xl font-outfit font-semibold text-neutral-800'
                 dangerouslySetInnerHTML={{__html: subtitle}}
               ></h4>
               <h3 
