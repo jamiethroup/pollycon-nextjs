@@ -67,8 +67,8 @@ const About: React.FC = () => {
   const [secondSwiper, setSecondSwiper] = useState<SwiperType | null>(null); // Use SwiperType instead of typeof Swiper
 
   return (
-    <section className="container mx-auto px-20 max-w-7xl pt-0 mb-10 md:py-10">
-      <div className="grid grid-cols-12 pt-40">
+    <section className="container mx-auto lg:px-20 max-w-7xl pt-0 mb-10 md:py-10">
+      <div className="grid grid-cols-12 pt-20 lg:pt-40">
         {/* START - Information Slider - Paragraph */}
         <div className="col-span-12 order-2 md:order-1 pl-4 md:col-span-6">
           <Swiper
@@ -78,11 +78,11 @@ const About: React.FC = () => {
           >
             {aboutSlides.map((slide, i) => (
               <SwiperSlide className="pr-10 md:pr-0" key={i}>
-                <h4 className="mt-10 text-sm uppercase">{slide.subtitle}</h4>
-                <h2 className="mt-4 text-4xl max-w-lg leading-normal text-gray-800">
+                <h4 className="lg:mt-10 text-sm uppercase">{slide.subtitle}</h4>
+                <h2 className="mt-4 text-2xl lg:text-4xl max-w-lg leading-normal text-gray-800">
                   {slide.title}
                 </h2>
-                <p className="mt-4 max-w-lg mb-20 md:mb-0 pr-20 font-light text-base text-gray-800">
+                <p className="mt-4 max-w-lg mb- md:mb-0 lg:pr-20 font-light text-base text-gray-800">
                   {slide.description}
                 </p>
               </SwiperSlide>

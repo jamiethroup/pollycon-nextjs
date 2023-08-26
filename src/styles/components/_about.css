@@ -51,16 +51,29 @@
 
 .aboutContentSwiper .swiper-button-prev,
 .aboutContentSwiper .swiper-button-next {
-  top: calc(100% - 20px);
+  position: relative;
+  display: inline-flex;
   border: 1px solid black;
   height: 18px;
   border-radius: 100%;
   padding: 20px;
+  margin-top: 0px;
+  top: auto;
+  z-index: 50;
 }
 
-@media(min-width: 750px) {
+.aboutContentSwiper .swiper-wrapper {
+  @apply h-fit pb-10;
+}
+
+.aboutContentSwiper .swiper-button-prev {
+  @apply left-0;
+}
+
+@media(min-width: 1020px) {
 .aboutContentSwiper .swiper-button-prev,
 .aboutContentSwiper .swiper-button-next {
+  position: absolute;
   top: calc(100% - 50px);
   }
 }
@@ -82,7 +95,13 @@ html.dark .aboutContentSwiper .swiper-button-next:after {
 
 .aboutContentSwiper .swiper-button-next {
   right: 0;
-  left: 70px;
+  left: 30px;
+}
+
+@media screen and (min-width: 1020px) {
+  .aboutContentSwiper .swiper-button-next {
+    left: 70px;
+  }
 }
 
 html.dark .about-button {

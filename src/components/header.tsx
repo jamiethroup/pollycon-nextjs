@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <>
       <header className='fixed z-50 top-0 left-0 w-full'>
-        <div className='container max-w-7xl mx-auto grid grid-cols-12 py-4 lg:py-12  px-6 lg:px-10'>
+        <div className='container mx-auto grid grid-cols-12 py-4 lg:py-12  px-6 lg:px-10'>
           <div className="col-span-6 md:col-span-2">
             <Link href='/'>
               <div className="hidden">Pollycon</div>
