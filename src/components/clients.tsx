@@ -29,7 +29,7 @@ export default function Clients() {
       <div className='px-6 py-20 md:px-0 grid md:grid-cols-12 md:gap-10'>
         <div className="col-span-12 text-center">
           <h5 
-          className='font-outfit max-w-3xl leading-relaxed mx-auto font-light text-white mb-10 tracking-wide'
+          className='font-dm_sans max-w-3xl leading-relaxed mx-auto font-light text-white mb-10 tracking-wide'
           >
           Over the last ten years, I&rsquo;ve been lucky enough to work with some of the best agencies in the UK. Here&rsquo;s some of the clients I&rsquo;ve worked with while at those agencies...
           </h5>

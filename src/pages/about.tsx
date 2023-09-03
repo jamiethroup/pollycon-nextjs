@@ -54,17 +54,17 @@ export default function About() {
     <div className="grid grid-cols-12">
       <div className="col-span-12 md:col-start-2 md:col-end-12 my-40">
         <h5  
-        className='font-outfit uppercase font-semibold  tracking-wide'
+        className='font-dm_sans uppercase font-semibold  tracking-wide'
         >
           How I help
         </h5>
         <h3 
-        className='text-gray-800 text-4xl md:text-5xl font-outfit md:leading-tight font-semibold max-w-4xl mt-6'
+        className='text-gray-800 text-4xl md:text-5xl font-dm_sans md:leading-tight font-semibold max-w-4xl mt-6'
         >
           In 2023, I&rsquo;ve celebrated my ten years in the development, six of which have been spent working with Shopify.
         </h3>
         <p 
-        className='text-gray-800 font-outfit text-base max-w-3xl font-light leading-relaxed mt-6'
+        className='text-gray-800 font-dm_sans text-base max-w-3xl font-light leading-relaxed mt-6'
         >
           I&rsquo;ve worked with a wide range of clients, from small businesses to large corporations, and I&rsquo;ve been lucky enough to work with some of the best agencies in the UK.
         </p>
@@ -85,7 +85,7 @@ export default function About() {
       <div className="col-span-12 lg:col-span-5">
         <div className="sticky top-40">
         <h3 className='text-gray-700 uppercase font-semibold'>Experience</h3>
-        <p className='text-gray-700 font-outfit text-lg leading-loose font-light mt-5'>
+        <p className='text-gray-700 font-dm_sans text-lg leading-loose font-light mt-5'>
           I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.
         </p>
       <a 
@@ -112,8 +112,8 @@ export default function About() {
         {jobs.map((job,i) => (
         <div key={i} className="job p-10 border rounded-md hover:rounded-2xl border-neutral-200 hover:bg-neutral-50 transition-all duration-150 mb-10">
           <div className="flex items-center justify-start mb-4">
-            <h5 className="job__date  font-outfit font-light">{job.date}</h5>
-            <div className="job__type text-gray-700 dark:text-white font-outfit font-light">{job.type}</div>
+            <h5 className="job__date  font-dm_sans font-light">{job.date}</h5>
+            <div className="job__type text-gray-700 dark:text-white font-dm_sans font-light">{job.type}</div>
           </div>
           <div className="job__meta">
             <h4 className="job__company">{job.company}</h4>
