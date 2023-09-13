@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
+const locale ={
+  title: `Where I've been...`,
+  description: `I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.`
+}
+
 const jobs = [
   {
     date: '2022 - Present',
@@ -58,7 +63,6 @@ const jobs = [
   }
 ];
 
-
 export default function Jobs() {
   return (
     <>
@@ -71,7 +75,7 @@ export default function Jobs() {
           data-sal-duration="500"
           data-sal-easing="ease-out-back"
         >
-          Where I've been...
+          {locale.title}
         </h2>
         <p className="font-light leading-relaxed font-dm_sans mb-4"
           data-sal="slide-up"
@@ -79,10 +83,8 @@ export default function Jobs() {
           data-sal-duration="500"
           data-sal-easing="ease-out-back"
         >
-          I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.
+          {locale.description}
         </p>
-        {/* Loop through jobs */}
-        
         {jobs.map((job, index) => (
             <div key={index} className="bg-white rounded-lg px-5 pt-8 pb-6 shadow-lg mt-10 relative"
             data-sal="slide-up"
