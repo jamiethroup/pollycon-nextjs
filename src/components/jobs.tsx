@@ -86,11 +86,11 @@ export default function Jobs() {
           {locale.description}
         </p>
         {jobs.map((job, index) => (
-            <div key={index} className="bg-white rounded-lg px-5 pt-8 pb-6 shadow-lg mt-10 relative"
+            <div key={index} className="bg-white rounded-lg px-5 pt-8 pb-6 shadow-lg mt-20 relative"
             data-sal="slide-up"
             data-sal-delay="400"
             data-sal-duration="500">
-              <div className="absolute -top-6 -right-2 h-16 w-16 rounded-full">
+              <div className="absolute -top-10 -right-8 h-16 w-16 rounded-full">
                 <Image
                   className="h-full w-full rounded-full"
                   src={job.logo}
