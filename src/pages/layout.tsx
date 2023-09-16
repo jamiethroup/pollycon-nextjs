@@ -1,22 +1,22 @@
 import React, { ReactNode, useEffect } from "react";
 import { useRouter } from 'next/router';
 import sal from 'sal.js';
-import Header from '@/components/header'
-import Footer from '@/components/footer'
-import { Cormorant_Infant, Outfit } from 'next/font/google';
+import Header from '@/components/header';
+import Jobs from '@/components/jobs';
+import Image from 'next/image';
+import { DM_Sans } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import ScrollClassAdder from '@/components/scrollclassadder'; // Adjust the import path if needed
 
-const outfit = Outfit({
+
+const dmsans = DM_Sans({
+  weight: ['400', '500', '700'],
+  style: ['normal'],
   subsets: ['latin'],
-  variable: '--font-outfit',
+  display: 'swap',
+  variable: '--font-dm_sans',
 })
 
-const cormorant = Cormorant_Infant({
-  subsets: ['latin'],
-  variable: '--font-cormorant',
-  weight: "300"
-});
 // Create a type for the children prop
 type Props = {
   children: ReactNode;
@@ -40,10 +40,8 @@ const Layout = ({ children }: Props) => {
 
   return (
     <>
-      <div id={pageId} className={`${outfit.variable} ${pathname.length === 1 ? 'index' : pathname.replace('/', '')}`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <div id={pageId} className={`${dmsans.variable} ${pathname.length === 1 ? 'index' : pathname.replace('/', '')}`}>
+        <main className="grid relative lg:grid-cols-2 min-h-screen">{children}</main>
         <Analytics />
         <ScrollClassAdder />
       </div>

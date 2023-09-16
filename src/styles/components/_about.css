@@ -113,5 +113,5 @@ html.dark .about-button svg  path {
 }
 
 .job__description {
-  @apply font-outfit text-neutral-700 dark:text-neutral-900 mt-4 leading-relaxed;
+  @apply font-dm_sans text-neutral-700 dark:text-neutral-900 mt-4 leading-relaxed;
 }

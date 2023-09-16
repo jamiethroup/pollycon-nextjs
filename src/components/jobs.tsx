@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
+
+const locale ={
+  title: `Where I've been...`,
+  description: `I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.`
+}
 
 const jobs = [
   {
     date: '2022 - Present',
+    logo: '../../images/jobs/bravetheskies.webp',
+    color: "#000000",
     type: 'Remote',
     title: 'Shopify Developer',
     company: 'Brave The Skies / Dark Matter Commerce',
@@ -11,6 +18,8 @@ const jobs = [
   },
   {
     date: '2021 - 2022',
+    logo: '../../images/jobs/fostr.svg',
+    color: "#000000",
     type: 'Remote',
     title: 'Developer / Senior Developer',
     company: 'Fost / IDHL Group',
@@ -18,6 +27,8 @@ const jobs = [
   },
   {
     date: '2017 - 2021',
+    logo: '../../images/jobs/squashed-pixel.jpg',
+    color: "#A02575",
     type: 'West Yorkshire, UK',
     title: 'Developer / Senior Developer',
     company: 'Squashed Pixel',
@@ -25,6 +36,8 @@ const jobs = [
   },
   {
     date: '2016 - 2017',
+    logo: '../../images/jobs/little.jpeg',
+    color: "#E94840",
     type: 'West Yorkshire, UK',
     title: 'Wordpress Developer',
     company: 'LITTLE Agency',
@@ -32,6 +45,8 @@ const jobs = [
   },
   {
     date: '2015 - 2016',
+    logo: '../../images/jobs/enjoy-digital.jpg',
+    color: "#EC654F",
     type: 'West Yorkshire, UK',
     title: 'Juinor Frontend Developer',
     company: 'Enjoy Digital',
@@ -39,6 +54,8 @@ const jobs = [
   },
   {
     date: '2013 - 2015',
+    logo: '../../images/jobs/force24.png',
+    color: "#C9FEF7",
     type: 'West Yorkshire, UK',
     title: 'Email Developer',
     company: 'Force24',
@@ -46,86 +63,50 @@ const jobs = [
   }
 ];
 
-
-export default function About() {
+export default function Jobs() {
   return (
-  <>
-  <section className="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-20 md:pb-20">
-    <div className="grid grid-cols-12">
-      <div className="col-span-12 md:col-start-2 md:col-end-12 my-40">
-        <h5  
-        className='font-dm_sans uppercase font-semibold  tracking-wide'
+    <>
+    <div className="relative min-h-screen bg-[#FBFBFB] items-center justify-center grid grid-cols-12 gap-5 py-10 md:py-20 2xl:py-40">
+      <div className="col-start-2 col-end-12">
+        <div className="lg:max-w-4xl mx-auto">
+        <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-10"
+          data-sal="slide-up"
+          data-sal-delay="200"
+          data-sal-duration="500"
+          data-sal-easing="ease-out-back"
         >
-          How I help
-        </h5>
-        <h3 
-        className='text-gray-800 text-4xl md:text-5xl font-dm_sans md:leading-tight font-semibold max-w-4xl mt-6'
+          {locale.title}
+        </h2>
+        <p className="font-light leading-relaxed font-dm_sans mb-4"
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-duration="500"
+          data-sal-easing="ease-out-back"
         >
-          In 2023, I&rsquo;ve celebrated my ten years in the development, six of which have been spent working with Shopify.
-        </h3>
-        <p 
-        className='text-gray-800 font-dm_sans text-base max-w-3xl font-light leading-relaxed mt-6'
-        >
-          I&rsquo;ve worked with a wide range of clients, from small businesses to large corporations, and I&rsquo;ve been lucky enough to work with some of the best agencies in the UK.
+          {locale.description}
         </p>
-      </div>
-    </div>
-    <div className="grid grid-cols-12 lg:gap-10 items-center px-4">
-      <div className="col-span-12 lg:col-span-3">
-        <Image src="/images/spaceman-jamie.webp" width="56" height="56" alt="me" />
-      </div>
-      <div className="col-span-12 lg:col-span-5">
-        <Image src="/images/jamie-family.webp" className='hidden md:block' width="56" height="56" alt="me" />
-        </div>
-      <div className="col-span-12 lg:col-span-4">
-        <Image src="/images/jamie-patriots.webp" className='hidden md:block' width="56" height="56" alt="me" />
-      </div>
-    </div>
-    <div className="grid grid-cols-12 lg:gap-10 mt-40 px-4">
-      <div className="col-span-12 lg:col-span-5">
-        <div className="sticky top-40">
-        <h3 className='text-gray-700 uppercase font-semibold'>Experience</h3>
-        <p className='text-gray-700 font-dm_sans text-lg leading-loose font-light mt-5'>
-          I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.
-        </p>
-      <a 
-        href="https://drive.google.com/file/d/1916JT7S5UEFp_t-igMjx1GJ-N8WXcvpr/view?usp=drive_link" 
-        className="about-button button rounded-full text-gray-700 mr-4 border-gray-700 mt-10 hover:bg-gray-700 hover:text-white group"
-      >
-        Download CV
-        <svg className='h-6 ml-2' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512">
-          <path className='fill-gray-700 group-hover:fill-white' d="m322.7 128.4 100.3 105c6 5.8 9 13.7 9 22.4s-3 16.5-9 22.4L322.7 383.6c-11.9 12.5-31.3 12.5-43.2 0-11.9-12.5-11.9-32.7 0-45.2l48.2-50.4h-217c-17 0-30.7-14.3-30.7-32s13.7-32 30.6-32h217l-48.2-50.4c-11.9-12.5-11.9-32.7 0-45.2 12-12.5 31.3-12.5 43.3 0z"/>
-        </svg>
-        </a>
-      <a 
-        href="https://www.linkedin.com/in/jamiethroup/" 
-        className="about-button button text-gray-700 rounded-full border-gray-700 mt-4 lg:mt-10 hover:bg-gray-700 hover:text-white group"
-      >
-        Visit LinkedIn
-        <svg className='h-6 ml-2' xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 512 512">
-          <path className='fill-gray-700 group-hover:fill-white' d="m322.7 128.4 100.3 105c6 5.8 9 13.7 9 22.4s-3 16.5-9 22.4L322.7 383.6c-11.9 12.5-31.3 12.5-43.2 0-11.9-12.5-11.9-32.7 0-45.2l48.2-50.4h-217c-17 0-30.7-14.3-30.7-32s13.7-32 30.6-32h217l-48.2-50.4c-11.9-12.5-11.9-32.7 0-45.2 12-12.5 31.3-12.5 43.3 0z"/>
-        </svg>
-        </a>
+        {jobs.map((job, index) => (
+            <div key={index} className="bg-white rounded-lg px-5 pt-8 pb-6 shadow-lg mt-20 relative"
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-duration="500">
+              <div className="absolute -top-10 -right-8 h-16 w-16 rounded-full">
+                <Image
+                  className="h-full w-full rounded-full"
+                  src={job.logo}
+                  alt="Picture of the author"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <div style={{backgroundColor: job.color as string} as React.CSSProperties} className={`font-semibold rounded-full p-1 inline-flex px-3 text-sm  uppercase text-white`}>{job.date}</div>
+              <h2 className="text-2xl font-medium text-black my-4">{job.company}</h2>
+              <p className="text-base font-dm_sans text-neutral-400 leading-loose pr-10 mt-2">{job.description}</p>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="col-span-12 lg:col-span-7 mt-10 lg:mt-0">
-        {jobs.map((job,i) => (
-        <div key={i} className="job p-10 border rounded-md hover:rounded-2xl border-neutral-200 hover:bg-neutral-50 transition-all duration-150 mb-10">
-          <div className="flex items-center justify-start mb-4">
-            <h5 className="job__date  font-dm_sans font-light">{job.date}</h5>
-            <div className="job__type text-gray-700 dark:text-white font-dm_sans font-light">{job.type}</div>
-          </div>
-          <div className="job__meta">
-            <h4 className="job__company">{job.company}</h4>
-            <h5 className="job__title">{job.title}</h5>
-            <p className="job__description">{job.description}</p>
-          </div>
-        </div>
-        ))}
-      </div>
     </div>
-    </section>
-    {/* <EmailForm /> */}
-  </>
+    </>
   )
 }

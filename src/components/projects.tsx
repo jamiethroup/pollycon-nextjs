@@ -38,7 +38,7 @@ export default function Projects() {
       <div className="grid grid-cols-12">
         <div className="col-span-12 md:col-start-2 md:col-end-12 hidden">
           <h5  
-          className='font-outfit uppercase font-medium  tracking-wide'
+          className='font-dm_sans uppercase font-medium  tracking-wide'
           >
             How I help
           </h5>
@@ -72,11 +72,11 @@ export default function Projects() {
               className="text"
             >
               <h4
-                className='text-2xl font-outfit font-semibold text-neutral-800'
+                className='text-2xl font-dm_sans font-semibold text-neutral-800'
                 dangerouslySetInnerHTML={{__html: subtitle}}
               ></h4>
               <h3 
-                className='font-outfit text-base leading-normal mt-4 max-w-lg font-light text-neutral-800'
+                className='font-dm_sans text-base leading-normal mt-4 max-w-lg font-light text-neutral-800'
                 dangerouslySetInnerHTML={{__html: title}}>
               </h3>
               <span className='mt-6 block'>

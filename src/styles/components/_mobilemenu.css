@@ -48,7 +48,7 @@
 
 
 .mobile-menu-inner__main ul li {
-  @apply px-2 py-4 border-b border-gray-200 font-outfit
+  @apply px-2 py-4 border-b border-gray-200 font-dm_sans
 }
 
 .mobile-menu-inner__main ul li a {

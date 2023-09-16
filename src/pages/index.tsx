@@ -1,20 +1,29 @@
 import React from 'react';
 
 // Components
-import Hero from '@/components/hero'
-import Projects from '@/components/projects'
+import Introduction from '@/components/introduction'
+import Jobs from '@/components/jobs'
+import Header from '@/components/header'
 import Clients from '@/components/clients'
-import About from '@/components/about'
-// import EmailForm from '@/components/emailForm'
 
+
+
+const componentImages = [
+  {
+    src: '/images/coding.webp',
+    alt: 'Jamie Coding',
+  },
+];
 
 export default function Home() {
   return (
   <>
-    <Hero/>
-    <About />
-    <Clients/>
-    <Projects/>
+    <Header />
+    <section className="relative">
+      <Introduction />
+      <Jobs />
+      <Clients />
+    </section>
   </>
   )
 }
