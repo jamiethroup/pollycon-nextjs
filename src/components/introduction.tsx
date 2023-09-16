@@ -43,14 +43,21 @@ export default function Projects() {
             data-sal-delay="600"
             data-sal-easing="ease-out-back"
           >
-            In 2023, I&rsquo;ve celebrated my ten years in the development, six of which have been spent working with Shopify.
+            In 2023, I celebrated ten years in my development career, six of which have been spent working on Shopify.
           </p>
           <p className="font-light leading-relaxed font-dm_sans lg:mb-4"
             data-sal="slide-up"
-            data-sal-delay="900"
+            data-sal-delay="600"
             data-sal-easing="ease-out-back"
           >
             I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.
+          </p>
+          <p className="font-light leading-relaxed font-dm_sans lg:mb-4"
+            data-sal="slide-up"
+            data-sal-delay="600"
+            data-sal-easing="ease-out-back"
+          >
+            I then moved into the world of Shopify, working for a number of agencies and freelancing for a number of clients. I have worked on a wide range of projects, from small theme tweaks to large scale migrations. Over the years I have gained a wealth of experience and knowledge, and I am always looking to learn more.
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Header() {
         </div>
         <div className="max-w-3xl"><h1 className="font-dm_sans text-5xl leading-tight font-bold text-[#96BF48]">Hello, I&rsquo;m Jamie, an Experienced Shopify Developer based in West Yorkshire 🐮</h1></div>
         <div className="text-[#C3D4F0] text-xs leading-6">
-          Find me on <a className="underline" href="#">X</a>, <a className="underline" href="#">Github</a> and <a className="underline" href="#">Linkedin</a><br></br>
+          Find me on <a className="underline" href="https://twitter.com/jamiethroup">X</a>, <a className="underline" href="https://github.com/jamiethroup">Github</a> and <a className="underline" href="https://www.linkedin.com/in/jamiethroup/">Linkedin</a><br></br>
           <a href="#" className="underline">Download</a> my Resume (PDF)
 
         </div>
