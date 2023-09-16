@@ -41,7 +41,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <div id={pageId} className={`${dmsans.variable} ${pathname.length === 1 ? 'index' : pathname.replace('/', '')}`}>
-        <main className="grid relative grid-cols-2 min-h-screen">{children}</main>
+        <main className="grid relative lg:grid-cols-2 min-h-screen">{children}</main>
         <Analytics />
         <ScrollClassAdder />
       </div>

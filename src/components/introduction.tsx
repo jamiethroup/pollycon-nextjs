@@ -16,7 +16,7 @@ export default function Projects() {
     <>
     
     {/* START - Hero Image */ }
-    <div className="relative min-h-screen object-cover">
+    <div className="relative min-h-screen object-cover flex-row-reverse">
       <Image
         src={componentImages[0].src}
         alt={componentImages[0].alt}
@@ -28,7 +28,7 @@ export default function Projects() {
     </div>
     {/* END - Hero Image */ }
     {/* START - Introduction */ }
-    <div className="relative min-h-screen bg-[#F2F2F2] items-center justify-center grid grid-cols-12 gap-5 p-5">
+    <div className="relative py-20 lg:py-0 lg:min-h-screen bg-[#F2F2F2] items-center justify-center grid grid-cols-12 gap-5">
       <div className="col-start-2 col-end-12">
         <div className="lg:max-w-4xl mx-auto">
           <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-6"
@@ -45,7 +45,7 @@ export default function Projects() {
           >
             In 2023, I’ve celebrated my ten years in the development, six of which have been spent working with Shopify.
           </p>
-          <p className="font-light leading-relaxed font-dm_sans mb-4"
+          <p className="font-light leading-relaxed font-dm_sans lg:mb-4"
             data-sal="slide-up"
             data-sal-delay="900"
             data-sal-easing="ease-out-back"
