@@ -36,14 +36,14 @@ export default function Projects() {
             data-sal-delay="300"
             data-sal-easing="ease-out-back"
           >
-            Hello, I'm Jamie, an Experienced Shopify Developer
+            Hello, I&rsquo;m Jamie, an Experienced Shopify Developer
           </h2>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
             data-sal="slide-up"
             data-sal-delay="600"
             data-sal-easing="ease-out-back"
           >
-            In 2023, I’ve celebrated my ten years in the development, six of which have been spent working with Shopify.
+            In 2023, I&rsquo;ve celebrated my ten years in the development, six of which have been spent working with Shopify.
           </p>
           <p className="font-light leading-relaxed font-dm_sans lg:mb-4"
             data-sal="slide-up"

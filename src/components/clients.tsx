@@ -43,7 +43,7 @@ export default function Clients() {
             data-sal-delay="600"
             data-sal-easing="ease-out-back">
       <h2 className='text-[#1E293B] text-4xl font-dm_sans font-bold mb-10 sal-animate'>
-        What I've worked on...
+        What I&lsquo;ve worked on...
       </h2>
       <h5 
       className='font-dm_sans leading-relaxed mx-auto font-light text-black mb-10 tracking-wide'
