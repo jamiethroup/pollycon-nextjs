@@ -48,7 +48,7 @@ export default function Clients() {
       <h5 
       className='font-dm_sans leading-relaxed mx-auto font-light text-black mb-10 tracking-wide'
       >
-      Over the last ten years, I&rsquo;ve been lucky enough to work with some of the best agencies in the UK. Here&rsquo;s some of the clients I&rsquo;ve worked with while at those agencies...
+        I&lsquo;ve had the pleasure of working with some amazing clients over the years. Here are just a few of them...
       </h5>
     </div>
     <div className="col-span-12 grid grid-cols-3 gap-1">
@@ -62,7 +62,7 @@ export default function Clients() {
           key={`${imageName}-${index}`}
         >
           <Image
-            className='grayscale max-h-20  xl:max-h-32 h-full w-auto hover:grayscale duration-300 ease-in-linear hover:scale-10 mx-auto'
+            className='grayscale max-h-20  xl:max-h-32 h-full w-auto hover:grayscale hover:scale-110 duration-300 ease-in-linear hover:scale-10 mx-auto'
             src={imageName}
             alt="Picture of the author"
             width={200}

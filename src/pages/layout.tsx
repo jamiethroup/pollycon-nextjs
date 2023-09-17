@@ -1,13 +1,10 @@
 import React, { ReactNode, useEffect } from "react";
 import { useRouter } from 'next/router';
 import sal from 'sal.js';
-import Header from '@/components/header';
-import Jobs from '@/components/jobs';
-import Image from 'next/image';
 import { DM_Sans } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
-import ScrollClassAdder from '@/components/scrollclassadder'; // Adjust the import path if needed
-
+import ScrollClassAdder from '@/components/scrollclassadder';
+import Script from 'next/script';
 
 const dmsans = DM_Sans({
   weight: ['400', '500', '700'],
@@ -17,16 +14,8 @@ const dmsans = DM_Sans({
   variable: '--font-dm_sans',
 })
 
-// Create a type for the children prop
 type Props = {
   children: ReactNode;
-};
-
-// Intersection Observer setup (define it outside the component)
-const observerOptions = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0,
 };
 
 const Layout = ({ children }: Props) => {
@@ -40,7 +29,17 @@ const Layout = ({ children }: Props) => {
 
   return (
     <>
-      <div id={pageId} className={`${dmsans.variable} ${pathname.length === 1 ? 'index' : pathname.replace('/', '')}`}>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-8WZ6P6V99R" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-8WZ6P6V99R');
+        `}
+      </Script>
+      <div id={pageId} className={`${dmsans.variable} font-dm_sans ${pathname.length === 1 ? 'index' : pathname.replace('/', '')}`}>
         <main className="grid relative lg:grid-cols-2 min-h-screen">{children}</main>
         <Analytics />
         <ScrollClassAdder />

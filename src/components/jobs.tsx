@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const locale ={
   title: `Where I've been...`,
-  description: `I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.`
+  description: `Over the last ten years, I've been lucky enough to work with some of the best agencies in the UK. Here's some of the roles and responsibilities of mine while at those agencies...`
 }
 
 const jobs = [
