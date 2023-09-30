@@ -37,12 +37,12 @@ function getRandomNumberUnder1000() {
 
 export default function Clients() {
   return (
-    <section className="relative min-h-screen bg-white items-center justify-center grid grid-cols-12 gap-5 pt-10 md:pt-20 2xl:pt-40">
-    <div className="col-start-2 col-end-12 text-left max-w-3xl"
+    <section className="relative min-h-screen bg-white items-center justify-center grid grid-cols-12 lg:gap-5 pt-10 md:pt-20 2xl:pt-40">
+    <div className="col-span-12 lg:col-start-2 lg:col-end-12 text-left max-w-3xl"
             data-sal="slide-up"
             data-sal-delay="600"
             data-sal-easing="ease-out-back">
-      <h2 className='text-[#1E293B] text-4xl font-dm_sans font-bold mb-10 sal-animate'>
+      <h2 className='text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10 sal-animate'>
         What I&lsquo;ve worked on...
       </h2>
       <h5 
