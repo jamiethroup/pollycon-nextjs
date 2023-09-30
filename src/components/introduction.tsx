@@ -36,7 +36,7 @@ export default function Projects() {
             data-sal-delay="300"
             data-sal-easing="ease-out-back"
           >
-            Hello, I&rsquo;m Jamie, an Experienced Shopify Developer
+            Hello, I&rsquo;m Jamie and coding is sorta my thing.
           </h2>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
             data-sal="slide-up"
@@ -58,6 +58,13 @@ export default function Projects() {
             data-sal-easing="ease-out-back"
           >
             I then moved into the world of Shopify, working for a number of agencies and freelancing for a number of clients. I have worked on a wide range of projects, from small theme tweaks to large scale migrations. Over the years I have gained a wealth of experience and knowledge, and I am always looking to learn more.
+          </p>
+          <p className="font-light leading-relaxed font-dm_sans lg:mb-4"
+            data-sal="slide-up"
+            data-sal-delay="600"
+            data-sal-easing="ease-out-back"
+          >
+            As cliché as it sounds, I am passionate about what I do. I love to learn new things and I am always looking to improve my skills.
           </p>
         </div>
       </div>

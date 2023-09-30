@@ -8,9 +8,9 @@ export default function Header() {
 
           </div>
           <div className="max-w-3xl">
-            <h1 className="font-dm_sans text-4xl leading-tight pr-10 lg:pr-20 font-bold text-[#96BF48]">Hello, I&rsquo;m Jamie, an Experienced Shopify Developer based in West Yorkshire 🐮</h1>
-            <p className="text-[#96BF48] mt-8 font-dm_sans">I should really fill this second line in...</p>
-            <a className="border border-[#96BF48] text-[#96BF48] inline-flex text-base py-2 px-4 font-dm_sans font-semibold rounded-full mt-8" href="#contact">Let&rsquo;s work together</a>
+            <h1 className="font-dm_sans text-4xl leading-tight pr-10 lg:pr-20 font-bold text-[#96BF48]">Hello, I&rsquo;m Jamie, an senior Shopify developer based in West Yorkshire 🐮</h1>
+            <p className="text-[#96BF48] mt-8 font-dm_sans">Welcome to my digital portfolio of-sorts.</p>
+            <a className="border border-[#96BF48] text-[#96BF48] hover:bg-[#96BF48] hover:text-white transition-all duration-150 inline-flex text-base py-2 px-4 font-dm_sans font-semibold rounded-full mt-8" href="#contact">Let&rsquo;s work together</a>
             </div>
           <div className="text-[#C3D4F0] text-xs leading-6">
             Find me on <a className="underline" href="https://twitter.com/jamiethroup">X</a>, <a className="underline" href="https://github.com/jamiethroup">Github</a> and <a className="underline" href="https://www.linkedin.com/in/jamiethroup/">Linkedin</a><br></br>
