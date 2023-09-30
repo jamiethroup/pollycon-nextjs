@@ -13,8 +13,7 @@ const componentImages = [
 
 export default function Projects() {
   return (
-    <>
-    
+    <section className='snap-start'>
     {/* START - Hero Image */ }
     <div className="relative min-h-screen object-cover flex-row-reverse">
       <Image
@@ -70,6 +69,6 @@ export default function Projects() {
       </div>
     </div>
     {/* END - Introduction */ }
-    </>
+    </section>
     )
 };

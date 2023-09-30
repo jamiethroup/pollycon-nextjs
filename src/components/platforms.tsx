@@ -37,7 +37,7 @@ function getRandomNumberUnder1000() {
 
 export default function Clients() {
   return (
-    <section className="snap-start relative min-h-screen bg-white items-center justify-center grid grid-cols-12 gap-5 pt-10 md:pt-20 2xl:pt-40">
+    <section className="relative min-h-screen bg-white items-center justify-center grid grid-cols-12 gap-5 pt-10 md:pt-20 2xl:pt-40">
     <div className="col-start-2 col-end-12 text-left max-w-3xl"
             data-sal="slide-up"
             data-sal-delay="600"
