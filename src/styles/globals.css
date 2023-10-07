@@ -1,24 +1,19 @@
+
+
 /* Layout */
 @import './layout/_header.css';
 @import './layout/_typography.css';
-@import './layout/_inputs.css';
 
 /* Components */
-@import './components/_about.css';
-@import './components/_burgermenu.css';
-@import './components/_buttons.css';
-@import './components/_footer.css';
-@import './components/_hero.css';
 @import './components/_jobs.css';
-@import './components/_mobilemenu.css';
-@import './components/_mode-toggle.css';
-@import './components/_projects.css';
+@import './components/_introduction.css';
 @import './vendor/_sal.css';
 
 /* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* Global Styles */
 html,body {

@@ -10,18 +10,3 @@ h3 {
 h4 {
   @apply font-dm_sans text-5xl max-w-2xl font-normal text-gray-700;
 }
-
-/* Dark Mode */
-html.dark {
-
-  p {
-    @apply text-neutral-400;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5 {
-    @apply text-white;
-  }
-}

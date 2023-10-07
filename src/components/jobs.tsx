@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 const locale ={
@@ -65,11 +65,11 @@ const jobs = [
 
 export default function Jobs() {
   return (
-    <section className="snap-start">
-    <div className="px-5 relative min-h-screen bg-[#FBFBFB] items-center justify-center grid grid-cols-12 lg:gap-5 py-10 md:py-20 2xl:py-40">
-      <div className="col-span-12 lg:col-start-2 lg:col-end-12">
+    <section className="jobs-section">
+    <div className="jobs-section__content">
+      <div className="jobs-section__column">
         <div className="lg:max-w-4xl mx-auto">
-        <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10"
+        <h2 className="jobs-section__title"
           data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="500"
@@ -77,7 +77,7 @@ export default function Jobs() {
         >
           {locale.title}
         </h2>
-        <p className="font-light leading-relaxed font-dm_sans mb-4"
+        <p className="jobs-section__description"
           data-sal="slide-up"
           data-sal-delay="400"
           data-sal-duration="500"
@@ -86,22 +86,22 @@ export default function Jobs() {
           {locale.description}
         </p>
         {jobs.map((job, index) => (
-            <div key={index} className="bg-white rounded-lg px-5 pt-8 pb-6 shadow-lg mt-10 lg:mt-20 relative"
+            <div key={index} className="job-block"
             data-sal="slide-up"
             data-sal-delay="400"
             data-sal-duration="500">
-              <div className="absolute -top-2 -right-2 lg:-top-10 lg:-right-8 h-16 w-16 rounded-full">
+              <figure className="job-block__image">
                 <Image
-                  className="h-full w-full rounded-full"
+                  className=""
                   src={job.logo}
                   alt="Picture of the author"
                   width={48}
                   height={48}
                 />
-              </div>
-              <div style={{backgroundColor: job.color as string} as React.CSSProperties} className={`font-semibold rounded-full p-1 inline-flex px-3 text-sm  uppercase text-white`}>{job.date}</div>
-              <h2 className="text-2xl font-medium text-black my-4">{job.company}</h2>
-              <p className="text-sm lg:text-base font-dm_sans text-neutral-400 leading-loose pr-4 lg:pr-10 mt-2">{job.description}</p>
+              </figure>
+              <div style={{backgroundColor: job.color as string} as React.CSSProperties} className="job-block__date">{job.date}</div>
+              <h2 className="job-block__company">{job.company}</h2>
+              <p className="job-block__description">{job.description}</p>
             </div>
           ))}
         </div>

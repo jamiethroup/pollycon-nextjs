@@ -14,7 +14,6 @@ import moynat from '../../public/images/clients/moynat.svg'
 import loulou from '../../public/images/clients/loulou.svg'
 import dubarry from '../../public/images/clients/dubarry.svg'
 
-// Create array of image names
 const imageNames = [
   beis,
   costcutter,
@@ -28,8 +27,17 @@ const imageNames = [
   moynat,
   loulou,
   dubarry
-  // Dagsmejan Little Women Triangl Florence By Mills HERA
+  // Dagsmejan 
+  // Little Women 
+  // Triangl 
+  // Florence By Mills 
+  // HERA
 ];
+
+const locale = {
+  title: "What I've worked on...",
+  subtitle: "I've had the pleasure of working with some amazing clients over the years. Here are just a few of them...",
+}
 
 function getRandomNumberUnder1000() {
   return Math.floor(Math.random() * 1000);
@@ -37,24 +45,26 @@ function getRandomNumberUnder1000() {
 
 export default function Clients() {
   return (
-    <section className="snap-start relative lg:min-h-screen bg-white items-center justify-center grid grid-cols-12 px-0 lg:gap-5 py-5 lg:pt-20 2xl:pt-40">
-    <div className="col-span-12 lg:col-start-2 lg:col-end-12 text-left px-5 lg:px-0 max-w-3xl"
-            data-sal="slide-up"
-            data-sal-delay="600"
-            data-sal-easing="ease-out-back">
-      <h2 className='text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10 sal-animate'>
-        What I&lsquo;ve worked on...
-      </h2>
-      <h5 
-      className='font-dm_sans leading-relaxed mx-auto font-light text-black mb-10 tracking-wide'
+    <section className="clients-section">
+    <div className="clients-section__content">
+      <h2
+        data-sal="slide-up"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-back"
       >
-        I&lsquo;ve had the pleasure of working with some amazing clients over the years. Here are just a few of them...
+        {locale.title}
+      </h2>
+      <h5
+        data-sal="slide-up"
+        data-sal-delay="800"
+        data-sal-easing="ease-out-back"
+      >
+        {locale.subtitle}
       </h5>
     </div>
-    <div className="col-span-12 grid grid-cols-3 gap-1">
+    <div className="clients-section__grid">
       {imageNames.map((imageName, index) => (
         <figure
-          className='col-span-1 bg-neutral-50 py-20 px-10 flex items-center h-full justify-center'
           data-sal="slide-up"
           data-sal-delay={getRandomNumberUnder1000()}
           data-sal-speed={getRandomNumberUnder1000()}
@@ -62,9 +72,8 @@ export default function Clients() {
           key={`${imageName}-${index}`}
         >
           <Image
-            className='grayscale max-h-20  xl:max-h-32 h-full w-auto hover:grayscale hover:scale-110 duration-300 ease-in-linear hover:scale-10 mx-auto'
             src={imageName}
-            alt="Picture of the author"
+            alt="Logo for a client I've worked with"
             width={200}
             height={200}
           />
