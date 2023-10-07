@@ -30,3 +30,7 @@
 .job__description {
   @apply text-sm font-dm_sans font-light leading-loose text-gray-500;
 }
+
+.post-title {
+  @apply text-base text-neutral-800;
+}
