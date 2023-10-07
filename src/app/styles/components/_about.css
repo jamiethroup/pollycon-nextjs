@@ -1,0 +1,117 @@
+/* SwiperJS - Effect Carts */
+.swiper.aboutCardSwiper img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.swiper.aboutContentSwiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.aboutCardSwiper .swiper-slide:nth-child(1n) {
+  background-size: cover;
+  background-position: center center;
+}
+
+.aboutCardSwiper .swiper-slide:nth-child(2n) {
+  background-size: cover;
+  background-position: center center;
+}
+ 
+.aboutCardSwiper .swiper-slide:nth-child(3n) {
+  background-size: cover;
+  background-position: center center;
+}
+
+.aboutCardSwiper .swiper-slide:nth-child(4n) {
+  background-size: cover;
+  background-position: center center;
+}
+
+.aboutContentSwiper .swiper-slide.swiper-slide-active {
+  opacity: 1!important;
+}
+
+.aboutContentSwiper .swiper-slide {
+  opacity: 0!important;
+}
+
+.aboutContentSwiper {
+  @apply h-full;
+}
+
+.aboutContentSwiper .swiper-button-prev,
+.aboutContentSwiper .swiper-button-next {
+  position: relative;
+  display: inline-flex;
+  border: 1px solid black;
+  height: 18px;
+  border-radius: 100%;
+  padding: 20px;
+  margin-top: 0px;
+  top: auto;
+  z-index: 50;
+}
+
+.aboutContentSwiper .swiper-wrapper {
+  @apply h-fit pb-10;
+}
+
+.aboutContentSwiper .swiper-button-prev {
+  @apply left-0;
+}
+
+@media(min-width: 1020px) {
+.aboutContentSwiper .swiper-button-prev,
+.aboutContentSwiper .swiper-button-next {
+  position: absolute;
+  top: calc(100% - 50px);
+  }
+}
+
+html.dark .aboutContentSwiper .swiper-button-prev,
+html.dark .aboutContentSwiper .swiper-button-next {
+  border: 1px solid white;
+}
+
+.aboutContentSwiper .swiper-button-prev:after,
+.aboutContentSwiper .swiper-button-next:after {
+  @apply text-black text-base;
+}
+
+html.dark .aboutContentSwiper .swiper-button-prev:after,
+html.dark .aboutContentSwiper .swiper-button-next:after {
+  @apply text-white;
+}
+
+.aboutContentSwiper .swiper-button-next {
+  right: 0;
+  left: 30px;
+}
+
+@media screen and (min-width: 1020px) {
+  .aboutContentSwiper .swiper-button-next {
+    left: 70px;
+  }
+}
+
+html.dark .about-button {
+  @apply text-white border-white
+}
+
+html.dark .about-button svg  path {
+  @apply fill-white;
+}
+
+.job__description {
+  @apply font-dm_sans text-neutral-700 dark:text-neutral-900 mt-4 leading-relaxed;
+}

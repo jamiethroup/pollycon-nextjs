@@ -1,0 +1,32 @@
+.job__date {
+  @apply rounded-full inline-block px-4 py-1 mr-4 bg-red-400 text-sm text-white font-medium;
+}
+
+.rounded-pill:nth-of-type(1) {
+  @apply bg-blue-200 text-blue-600;
+}
+
+.rounded-pill:nth-of-type(2) { 
+  @apply bg-green-300 text-green-700; 
+}
+
+.rounded-pill:nth-of-type(3) { 
+  @apply bg-red-300 text-red-700; 
+}
+
+.job__company  {
+  @apply mb-2 font-dm_sans;
+}
+
+.job__title  {
+  @apply font-dm_sans text-sm font-light tracking-wider uppercase text-gray-400;
+}
+
+/* About - Job */
+.job__company {
+  @apply text-4xl font-dm_sans;
+}
+
+.job__description {
+  @apply text-sm font-dm_sans font-light leading-loose text-gray-500;
+}

@@ -1,0 +1,22 @@
+
+
+.button {
+  @apply font-dm_sans text-base tracking-wide border border-white  text-white bg-transparent inline-flex items-center justify-center py-3 px-8 duration-300 ease-in-out;
+}
+
+.button * {
+  @apply duration-300 ease-in-out;
+}
+
+.button:hover {
+  @apply bg-white text-black;
+}
+
+
+.button:hover svg path {
+  @apply fill-black;
+}
+
+.button:hover svg {
+  @apply translate-x-2;
+}
