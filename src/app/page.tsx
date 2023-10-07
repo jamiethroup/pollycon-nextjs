@@ -31,10 +31,10 @@ export default function Home() {
     <>
       <Header />
       <section className="relative snap-mandatory scroll-smooth snap-x">
+        <BlogPosts />
         <Introduction />
         <Jobs />
         <Clients />
-        <BlogPosts />
       </section>
     </>
   )

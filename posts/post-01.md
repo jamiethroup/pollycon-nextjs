@@ -1,8 +1,10 @@
 ---
 title: What's the best code editor and why you should be using Visual Studio Code
 date: 2021-12-24
-image: ../posts/images/vscode.png
+image: [rightangle]('../images/vscode.png')
 ---
+
+[rightangle]('../images/vscode.png')
 
 Full disclaimer - I have literally no allegiance to Microsoft. I've actually moved away from their regular family of products i.e. Operating System and Office Suite to Macintosh and Google Documents, so in no way this can be considered as fanboy-ism. Now that's out the way...
 

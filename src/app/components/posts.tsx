@@ -21,11 +21,7 @@ function PostCard(post: Post) {
       </time>
       <div className="text-sm hidden [&>*]:mb-3 [&>*:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: post.body.html }} />
       <div className="mt-4">
-      {post.image && (
-              <div className="mt-4">
-                <Image src={post.image} alt={post.title} width={640} height={360} />
-              </div>
-            )}
+        <Image src={post.image} alt={post.title} width={640} height={360} />
       </div>
     </div>
   )
