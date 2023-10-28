@@ -6,12 +6,13 @@ import Jobs from 'src/app/components/jobs'
 import Header from 'src/app/components/header'
 import Clients from 'src/app/components/clients'
 import BlogPosts from 'src/app/components/posts'
+import Contact from 'src/app/components/contact'
 
 
 function PostCard(post: Post) {
   return (
     <div className="mb-8">
-      <h2 className="mb-1 text-xl">
+      <h2 className="mb-1 text-xl"> asd
         <Link href={post.url} className="post-title">
           {post.title}
         </Link>
@@ -31,10 +32,11 @@ export default function Home() {
     <>
       <Header />
       <section className="relative snap-mandatory scroll-smooth snap-x">
-        <BlogPosts />
         <Introduction />
         <Jobs />
         <Clients />
+        <BlogPosts />
+        <Contact />
       </section>
     </>
   )

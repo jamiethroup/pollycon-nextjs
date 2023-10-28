@@ -10,8 +10,8 @@ import 'swiper/css/pagination';
 
 function PostCard(post: Post) {
   return (
-    <div className="mb-8 hidden">
-      <h2 className="mb-1 text-xl">
+    <div className="mb-8">
+      <h2 className="mb-1 text-xl 123">
         <Link href={post.url} className="post-title">
           {post.title}
         </Link>
