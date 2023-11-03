@@ -39,7 +39,7 @@ const links = [
 export default function Jobs() {
   return (
     <section className="snap-start">
-    <div className="px-5 relative min-h-screen bg-[#FBFBFB] items-center justify-center grid grid-cols-12 lg:gap-5 py-10 md:py-20 2xl:py-40">
+    <div className="px-5 relative min-h-screen bg-white items-center justify-center grid grid-cols-12 lg:gap-5 py-10 md:py-20 2xl:py-40">
       <div className="col-span-12 lg:col-start-2 lg:col-end-12">
         <div className="lg:max-w-4xl mx-auto">
           <h3 className='text-[#1E293B] text-4xl font-dm_sans font-bold mb-6'>{locale.title}</h3>

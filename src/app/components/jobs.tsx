@@ -79,12 +79,13 @@ export default function Jobs() {
         </p>
         {jobs.map((job, index) => (
             <div key={index} className="bg-white rounded-lg px-5 pt-8 pb-6 shadow-lg mt-10 lg:mt-20 relative">
-              <div className="absolute -top-2 -right-2 lg:-top-10 lg:-right-8 h-16 w-16 rounded-full">
+              <div style={{backgroundColor: job.color as string} as React.CSSProperties} className="absolute -top-2 -right-2 lg:-top-10 lg:-right-8 h-16 w-16 flex items-center justify-center rounded-full">
                 <Image
                   src={job.logo}
                   alt="Picture of the author"
                   width={14}
                   height={14}
+                  className='w-1/2 h-1/2 rounded-full'
                 />
               </div>
               <div style={{backgroundColor: job.color as string} as React.CSSProperties} className={`font-semibold rounded-full p-1 inline-flex px-3 text-sm  uppercase text-white`}>{job.date}</div>
