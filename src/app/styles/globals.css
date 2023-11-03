@@ -34,3 +34,23 @@ html,body {
 main {
   @apply grid relative grid-cols-1 lg:grid-cols-2 min-h-screen flex-row;
 }
+
+.contact-link {
+  @apply flex items-center justify-center w-10 h-10 rounded-full;
+}
+
+[link-type="calendly"] {
+  @apply  bg-[#619cc0];
+}
+
+[link-type="whatsapp"] {
+  @apply bg-[#25D366];
+}
+
+[link-type="linkedin"] {
+  @apply bg-[#0a66c2];
+}
+
+[link-type="twitter"] {
+  @apply bg-black;
+}

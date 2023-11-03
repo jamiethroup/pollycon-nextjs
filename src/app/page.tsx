@@ -3,9 +3,9 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import { allPosts, Post } from 'contentlayer/generated'
 import Introduction from 'src/app/components/introduction'
 import Jobs from 'src/app/components/jobs'
+import BlogPosts from 'src/app/components/posts'
 import Header from 'src/app/components/header'
 import Clients from 'src/app/components/clients'
-import BlogPosts from 'src/app/components/posts'
 import Contact from 'src/app/components/contact'
 
 
