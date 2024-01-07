@@ -34,7 +34,7 @@ export default function Projects() {
           </h2>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
           >
-            In 2023, I celebrated ten years in my development career, six of which have been spent working on Shopify.
+            In 2024, I celebrated eleven years in my development career, eight of which have been spent working on Shopify.
           </p>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
           >
@@ -42,7 +42,7 @@ export default function Projects() {
           </p>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
           >
-            I then moved into the world of Shopify, working for a number of agencies and freelancing for a number of clients. I have worked on a wide range of projects, from small theme tweaks to large scale migrations. Over the years I have gained a wealth of experience and knowledge, and I am always looking to learn more.
+            In 2016, the world of Shopify, working for a number of agencies and freelancing for a number of clients. I have worked on a wide range of projects, from small theme tweaks to large scale migrations. Over the years I have gained a wealth of experience and knowledge, and I am always looking to learn more.
           </p>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
           >

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const locale ={
   title: `Where I've been...`,
-  description: `Over the last ten years, I've been lucky enough to work with some of the best agencies in the UK...`
+  description: `Over the last eleven years, I've been lucky enough to work with some of the best agencies in the UK...`
 }
 
 const jobs = [
@@ -13,7 +13,7 @@ const jobs = [
     color: "#000000",
     type: 'Remote',
     title: 'Shopify Developer',
-    company: 'Brave The Skies / Dark Matter Commerce',
+    company: 'Brave The Skies',
     description: 'Briefly working on the retainers team, I was responsible for maintaining, scoping, developing for and updating a number of clients Shopify stores. I was then transferred across to the projects team where I was responsible for building out a number of new Shopify stores for clients.'
   },
   {
@@ -21,18 +21,18 @@ const jobs = [
     logo: '/images/jobs/fostr.svg',
     color: "#000000",
     type: 'Remote',
-    title: 'Developer / Senior Developer',
-    company: 'Fost / IDHL Group',
-    description: 'As a Senior Shopify Project Developer, my day-to-day activities revolve around leading and overseeing the development of complex e-commerce projects on the Shopify platform. I collaborate closely with cross-functional teams, including designers, project managers, and stakeholders, to gather project requirements and devise effective solutions.'
+    title: 'Shopify Project Developer',
+    company: 'Fostr',
+    description: 'As a Shopify Project Developer, my day-to-day activities revolve around leading and overseeing the development of complex e-commerce projects with clients that were based in US, France and the UK. Effective time management and communication skills are essential in this role, as well as the ability to work well under pressure.'
   },
   {
     date: '2017 - 2021',
     logo: '/images/jobs/squashed-pixel.jpg',
     color: "#A02575",
     type: 'West Yorkshire, UK',
-    title: 'Developer / Senior Developer',
+    title: 'Developer / Team Lead',
     company: 'Squashed Pixel',
-    description: 'As a Shopify Developer, my day-to-day activities involve creating and optimizing e-commerce websites on the Shopify platform. Starting as a Junior, I have grown into a Senior role, continually learning and honing my skills through hands-on experience here.'
+    description: 'As a Shopify Developer, my day-to-day activities involve creating and optimizing e-commerce websites on the Shopify platform. Starting as a Junior and progressing into the team lead, I spent my first couple of years concentrating solely on learning the Shopify ecosystem. I then moved into a team lead role, where I was responsible for managing a team of developers, as well as being responsible for the development of a number of Shopify stores.'
   },
   {
     date: '2016 - 2017',
@@ -41,7 +41,7 @@ const jobs = [
     type: 'West Yorkshire, UK',
     title: 'Wordpress Developer',
     company: 'LITTLE Agency',
-    description: 'As a WordPress Developer with server management responsibilities, my day-to-day activities are a dynamic blend of web development and server administration.'
+    description: 'As a WordPress Developer with server management responsibilities, my day-to-day activities are a dynamic blend of web development and server administration. I was able to see projects through from conception to completion, including WooCommerce integrations, custom plugin development, and server migrations.'
   },
   {
     date: '2015 - 2016',
@@ -50,7 +50,7 @@ const jobs = [
     type: 'West Yorkshire, UK',
     title: 'Juinor Frontend Developer',
     company: 'Enjoy Digital',
-    description: 'As a Junior Front End Developer, my day-to-day activities focus on crafting and enhancing front end templates for Umbraco, a versatile content management system. I collaborate closely with the design and development teams to convert visual designs into responsive and user-friendly web templates using HTML, CSS, and JavaScript.'
+    description: 'As a Junior Front End Developer, my day-to-day activities focus on crafting and enhancing front end templates for Umbraco. I collaborate dclosely with the design and back-end development teams to convert visual designs into responsive and user-friendly web templates using HTML, CSS, and jQuery.'
   },
   {
     date: '2013 - 2015',
@@ -59,7 +59,7 @@ const jobs = [
     type: 'West Yorkshire, UK',
     title: 'Email Developer',
     company: 'Force24',
-    description: 'As a Junior Email Developer, I played a critical role in shaping captivating and effective email campaigns for our organization. Working closely with the talented marketing and design teams, I turned their creative visions into reality by coding and implementing eye-catching email templates. My focus revolved around ensuring seamless rendering across diverse email clients and devices.'
+    description: 'As a Junior Email Developer, my role included developing, testing and scheduling campaigns for a range of clients. My focus revolved around ensuring seamless rendering across diverse email clients and devices.'
   }
 ];
 
