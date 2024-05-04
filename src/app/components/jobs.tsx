@@ -14,7 +14,7 @@ const jobs = [
     type: 'Remote',
     title: 'Shopify Developer',
     company: 'Brave The Skies',
-    description: 'Briefly working on the retainers team, I was responsible for maintaining, scoping, developing for and updating a number of clients Shopify stores. I was then transferred across to the projects team where I was responsible for building out a number of new Shopify stores for clients.'
+    description: 'Briefly working on the retainers team, I was responsible for maintaining, scoping, developing for and updating a number of clients Shopify stores. I was then transferred across to the projects team where I was responsible for building out a number of new Shopify stores for clients. I am now the technical lead for the projects team, responsible for overseeing the development of all new Shopify'
   },
   {
     date: '2021 - 2022',
@@ -83,8 +83,8 @@ export default function Jobs() {
                 <Image
                   src={job.logo}
                   alt="Picture of the author"
-                  width={14}
-                  height={14}
+                  width={52}
+                  height={52}
                   className='w-1/2 h-1/2 rounded-full'
                 />
               </div>

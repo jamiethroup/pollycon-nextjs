@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const componentImages = [
   {
-    src: '/images/coding.webp',
+    src: '/images/daftjamie.jpg',
     alt: 'Jamie Coding',
   },
 ];
@@ -38,11 +38,15 @@ export default function Projects() {
           </p>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
           >
-            I started off my career as an email developer, creating emails for the likes of nPower and Park Dean Resorts. I then moved into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.
+            I started off my career as an email developer, creating emails for the likes of nPower and Park Dean. I then moved out of in-house and into the agency world, working with a wide range of clients such as the NHS, the University of Leeds, and LVMH.
           </p>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
           >
-            In 2016, the world of Shopify, working for a number of agencies and freelancing for a number of clients. I have worked on a wide range of projects, from small theme tweaks to large scale migrations. Over the years I have gained a wealth of experience and knowledge, and I am always looking to learn more.
+            In 2016, I was introduced to the world of Shopify. Since then, I&lsquo;ve worked for a number of agencies and freelancing for a number of clients. I have worked on a wide range of projects, from small theme tweaks to large scale migrations and blue chip clients and proejcts.
+          </p>
+          <p className="font-light leading-relaxed font-dm_sans mb-4"
+          >
+            I&lsquo;ve transitioned into a Technical lead in my current role, where I am responsible for the development of a number of Shopify stores, as well as managing a team of developers and a multitude of projects.
           </p>
           <p className="font-light leading-relaxed font-dm_sans mb-4"
           >

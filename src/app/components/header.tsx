@@ -20,8 +20,8 @@ const logoSvg = (
 
 const locale = {
   header: {
-    title: `Hello, I'm Jamie, an senior Shopify developer based in West Yorkshire 🐮`,
-    subtitle: `Welcome to my digital portfolio of-sorts.`,
+    title: `Hello, I'm Jamie, a technical lead and senior Shopify developer based in West Yorkshire 🐮`,
+    subtitle: `Welcome to my digital portfolio of-sorts. Take a gander...`,
   },
   description: `Over the last ten years, I've been lucky enough to work with some of the best agencies in the UK...`
 }
