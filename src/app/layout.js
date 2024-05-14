@@ -18,7 +18,7 @@ const dmsans = DM_Sans({
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Pollycon | Senior Shopify Developer",
+  title: "Pollycon | Shopify Developer - Jamie Throup",
   description:
     "Over the last ten years, I've been lucky enough to work with some of the best agencies in the UK...",
   keywords: "Shopify, Developer, Freelance, West Yorkshire, UK",

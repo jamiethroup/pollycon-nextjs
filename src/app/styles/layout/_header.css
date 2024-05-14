@@ -17,7 +17,7 @@
 
 
 .header__container {
-  @apply max-h-screen sticky top-0 gap-10 left-0 h-full w-full text-white flex items-start justify-between p-10 flex-col;
+  @apply max-h-screen sticky top-0 gap-10 left-0 aspect-square lg:aspect-[0] h-full w-full text-white flex items-start justify-between p-10 flex-col;
 }
 
 .heaer__content {
@@ -25,7 +25,7 @@
 }
 
 .header__social-info {
-  @apply text-[#C3D4F0] text-xs leading-6;
+  @apply text-[#C3D4F0] text-xs leading-6 mt-10 lg:mt-0;
 
   a {
     @apply underline
