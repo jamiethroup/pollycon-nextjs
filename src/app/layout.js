@@ -2,6 +2,7 @@ import ".//styles/globals.css";
 import { Metadata } from "next"; // Remove "type" keyword
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import { DM_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics gaId="G-8WZ6P6V99R" />
       </body>
     </html>
   );
