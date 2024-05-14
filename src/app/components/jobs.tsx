@@ -1,3 +1,4 @@
+import FadingSection from '../components/fadeIn';
 import React, { useState } from 'react';
 import Image from 'next/image';
 
@@ -66,36 +67,38 @@ const jobs = [
 export default function Jobs() {
   return (
     <section className="snap-start">
-    <div className="px-5 relative min-h-screen bg-[#FBFBFB] items-center justify-center grid grid-cols-12 lg:gap-5 py-10 md:py-20 2xl:py-40">
-      <div className="col-span-12 lg:col-start-2 lg:col-end-12">
-        <div className="lg:max-w-4xl mx-auto">
-        <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10"
-        >
-          {locale.title}
-        </h2>
-        <p className="font-light leading-relaxed font-dm_sans mb-4"
-        >
-          {locale.description}
-        </p>
-        {jobs.map((job, index) => (
-            <div key={index} className="bg-white rounded-lg px-5 pt-8 pb-6 shadow-lg mt-10 lg:mt-20 relative">
-              <div style={{backgroundColor: job.color as string} as React.CSSProperties} className="absolute -top-2 -right-2 lg:-top-10 lg:-right-8 h-16 w-16 flex items-center justify-center rounded-full">
-                <Image
-                  src={job.logo}
-                  alt="Picture of the author"
-                  width={52}
-                  height={52}
-                  className='w-1/2 h-1/2 rounded-full'
-                />
+      <FadingSection>
+      <div className="px-5 relative min-h-screen bg-[#FBFBFB] items-center justify-center grid grid-cols-12 lg:gap-5 py-10 md:py-20 2xl:py-40">
+        <div className="col-span-12 lg:col-start-2 lg:col-end-12">
+          <div className="lg:max-w-4xl mx-auto">
+          <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10"
+          >
+            {locale.title}
+          </h2>
+          <p className="font-light leading-relaxed font-dm_sans mb-4"
+          >
+            {locale.description}
+          </p>
+          {jobs.map((job, index) => (
+              <div key={index} className="bg-white rounded-lg px-5 pt-8 pb-6 shadow-lg mt-10 lg:mt-20 relative next-fade">
+                <div style={{backgroundColor: job.color as string} as React.CSSProperties} className="absolute -top-2 -right-2 lg:-top-10 lg:-right-8 h-16 w-16 flex items-center justify-center rounded-full">
+                  <Image
+                    src={job.logo}
+                    alt="Picture of the author"
+                    width={52}
+                    height={52}
+                    className='w-1/2 h-1/2 rounded-full'
+                  />
+                </div>
+                <div style={{backgroundColor: job.color as string} as React.CSSProperties} className={`font-semibold rounded-full p-1 inline-flex px-3 text-sm  uppercase text-white`}>{job.date}</div>
+                <h2 className="text-2xl font-medium text-black my-4">{job.company}</h2>
+                <p className="text-sm lg:text-base font-dm_sans text-neutral-400 leading-loose pr-4 lg:pr-10 mt-2">{job.description}</p>
               </div>
-              <div style={{backgroundColor: job.color as string} as React.CSSProperties} className={`font-semibold rounded-full p-1 inline-flex px-3 text-sm  uppercase text-white`}>{job.date}</div>
-              <h2 className="text-2xl font-medium text-black my-4">{job.company}</h2>
-              <p className="text-sm lg:text-base font-dm_sans text-neutral-400 leading-loose pr-4 lg:pr-10 mt-2">{job.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      </FadingSection>
     </section>
   )
 }

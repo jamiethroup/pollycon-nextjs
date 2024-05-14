@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FadingSection from "./fadeIn";
 
 // Images
 import beis from "../../../public/images/clients/beis.svg";
@@ -37,12 +38,13 @@ function getRandomNumberUnder1000() {
 
 export default function Clients() {
   return (
+    <FadingSection>
     <section className="snap-start relative lg:min-h-screen bg-white items-center justify-center grid grid-cols-12 px-0 lg:gap-5 py-5 lg:pt-20 2xl:pt-40">
       <div className="col-span-12 lg:col-start-2 lg:col-end-12 text-left px-5 lg:px-0 max-w-3xl">
-        <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10 sal-animate">
+        <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10 next-fade">
           What I&lsquo;ve worked on...
         </h2>
-        <h5 className="font-dm_sans leading-relaxed mx-auto font-light text-black mb-10 tracking-wide">
+        <h5 className="font-dm_sans leading-relaxed mx-auto font-light text-black mb-10 tracking-wide next-fade">
           I&lsquo;ve had the pleasure of working with some amazing clients over
           the years. Here are just a few of them...
         </h5>
@@ -50,7 +52,7 @@ export default function Clients() {
       <div className="col-span-12 grid grid-cols-3 gap-1">
         {imageNames.map((imageName, index) => (
           <figure
-            className="col-span-1 bg-neutral-50 py-20 px-10 flex items-center h-full justify-center"
+            className="col-span-1 bg-neutral-50 py-20 px-10 flex items-center h-full justify-center next-fade"
             key={`${imageName}-${index}`}
           >
             <Image
@@ -64,5 +66,6 @@ export default function Clients() {
         ))}
       </div>
     </section>
+    </FadingSection>
   );
 }

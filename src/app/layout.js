@@ -2,7 +2,6 @@ import ".//styles/globals.css";
 import { Metadata } from "next"; // Remove "type" keyword
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import sal from "sal.js";
 import Script from "next/script";
 import { DM_Sans } from "next/font/google";
 

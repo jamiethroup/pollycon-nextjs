@@ -54,3 +54,13 @@ main {
 [link-type="twitter"] {
   @apply bg-black;
 }
+
+
+
+.next-fade {
+  @apply opacity-0 transform transition-opacity duration-500 ease-in-out translate-y-5;
+
+  &.is-visible {
+    @apply opacity-100 transform-none delay-300;
+  }
+}

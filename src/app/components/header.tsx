@@ -1,4 +1,5 @@
 import React from 'react';
+import FadingSection from '../components/fadeIn';
 
 const logoSvg = (
   <svg
@@ -34,16 +35,18 @@ export default function Header() {
         <div className="header__container">
           <div className='header__logo'>{logoSvg}</div>
           <div className="header__content">
-            <h1>
+            <FadingSection>
+            <h1 className='next-fade'>
               {locale.header.title}
             </h1>
-            <h2>{locale.header.subtitle}</h2>
+            <h2 className='next-fade'>{locale.header.subtitle}</h2>
             <a
               href="mailto:hello@pollycon.co.uk"
-              className="button"
+              className="button next-fade"
             >
               Let&rsquo;s work together
             </a>
+            </FadingSection>
           </div>
           <div className="header__social-info">
             Find me on{' '}
