@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { DM_Sans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const dmsans = DM_Sans({
   weight: ["400", "500", "700"],
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
       <body className={`${dmsans.variable} font-dm_sans`}>
         <main>{children}</main>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
