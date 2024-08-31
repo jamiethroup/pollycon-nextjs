@@ -17,7 +17,7 @@ const logoSvg = (
       className="fill-[#96BF48]"
     />
   </svg>
-);
+); 
 
 const locale = {
   header: {

@@ -51,8 +51,8 @@ export default function Jobs() {
           <ul className='grid grid-cols-2 gap-x-5 gap-y-6 mt-10'>
             {/* Loop through const links */}
             {links.map((link, index) => (
-              <li className='scale-100 hover:scale-105 transition-all duration-200 next-fade' key={index}>
-                <a className='flex items-center gap-2 justify-start' href={link.link} target='_blank' rel='noreferrer'>
+              <li className='transition-all duration-200 next-fade' key={index}>
+                <a className='scale-100 hover:scale-105 hover:duration-200 transition-all duration-200 flex items-center gap-2 justify-start' href={link.link} target='_blank' rel='noreferrer'>
                 <span className="contact-link" link-type={(link.name).toLowerCase()}>
                   <Image
                     src={link.image}
