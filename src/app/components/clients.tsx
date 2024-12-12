@@ -41,7 +41,7 @@ export default function Clients() {
     <FadingSection>
     <section className="snap-start relative lg:min-h-screen bg-white items-center justify-center grid grid-cols-12 px-0 lg:gap-5 py-5 lg:pt-20 2xl:pt-40">
       <div className="col-span-12 lg:col-start-2 lg:col-end-12 text-left px-5 lg:px-0 max-w-3xl">
-        <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10 next-fade">
+        <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-7 next-fade">
           What I&lsquo;ve worked on...
         </h2>
         <h5 className="font-dm_sans leading-relaxed mx-auto font-light text-black mb-10 tracking-wide next-fade">
@@ -58,6 +58,7 @@ export default function Clients() {
             <Image
               className="grayscale max-h-20 xl:max-h-24 h-full w-auto hover:grayscale hover:scale-110 duration-300 ease-in-linear hover:scale-10 mx-auto"
               src={imageName}
+              unoptimized
               alt="Picture of the author"
               width={200}
               height={200}

@@ -1,5 +1,5 @@
 import FadingSection from '../components/fadeIn';
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 const locale ={
@@ -71,7 +71,7 @@ export default function Jobs() {
       <div className="px-5 relative min-h-screen bg-[#FBFBFB] items-center justify-center grid grid-cols-12 lg:gap-5 py-10 md:py-20 2xl:py-40">
         <div className="col-span-12 lg:col-start-2 lg:col-end-12">
           <div className="lg:max-w-4xl mx-auto">
-          <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-10"
+          <h2 className="text-[#1E293B] text-4xl font-dm_sans font-bold mb-5 lg:mb-7"
           >
             {locale.title}
           </h2>
